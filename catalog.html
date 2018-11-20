@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>Техномарт — магазин строительных материалов</title>
 </head>
 <body>
-	<header class="main-header"> 
+	<header class="main-header">
+		<h1 class="visually-hidden">Каталог магазина строительных материалов «Техномарт»</h1>
 		<section class="top-menu">
-			<span class="main-logo-icon">Техномарт</span>
-			<span class="search">Поиск</span>
-			<span class="bookmarks">Закладки</span>
-			<span class="basket">Корзина: 10</span>
-			<span class="checkout">Оформить заказ</span>
+			<ul class="top-menu-list">
+				<li class="main-logo"><a href="#">Техномарт</a></li>
+				<li class="top-menu-item-logo"><span class="search">Поиск:</span></li>
+				<li class="top-menu-item-logo"><a href="#">Закладк: 0</a></li>
+				<li class="top-menu-item-logo"><a href="#">Корзина: 10</a></li>
+				<li class="checkout"><a href="#">Оформить заказ</a></li>
+			</ul>
 		</section>
-
-		<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-
-		<p class="main-phone">
-			+7 (812) 555-05-55
-		</p>
-		<b>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</b>
-		<span class="button-profile"><a href="my-account">Равшан Джамшутович</a></span>
-		<a href="my-orders">Мои заказы</a>
-		<a href="my-account">Личный кабинет</a>
-
+		<div class="main-phone">
+			<a href="tel: +78125550555">+7 (812) 555-05-55</a>
+			<p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+		</div>
+		<div class="user-navigation">
+			<span class="btn-profile"><a href="profile.html">Равшан Джамшутович</a></span>
+			<a href="my-orders">Мои заказы</a>
+			<a href="my-account">Личный кабинет</a>
+		</div>
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li><a href="#">Главная</a></li>
@@ -37,16 +38,14 @@
 	</header>
 
 <main class="container">
-	<ul class="breadcrumbs">
+	<ul class="breadcrumbs-item">
 		<li><a href="index.html">Главная</a></li>
 		<li><a href="catalog.html">Каталог</li>
 		<li><a href="catalog-item.html">Инструмент</li>
 		<li class="breadcrumbs-current">Перфораторы</li>
 	</ul>
 
-	<h2>
-		Перфораторы
-	</h2>
+	<h2 class="main-h2">Перфораторы</h2>
 
 	<section class="filters">
 		<h2 class="visually-hidden">Фильтр товаров</h2>
@@ -55,109 +54,142 @@
 	<section class="catalog">
 		<h2 class="visually-hidden">Список товаров</h2>
 		<ul class="catalog-list">
-			<li class="catalog-item">
-				<img src="img/boschbfg3000.jpg" alt="" width="144" height="128">
+			<li class="catalog-item-title">
+				<div class="catalog-item-action">
+					<button class="btn buy-item">Купить</button>
+					<button class="btn bookmark-item">В закладки</button>
+				</div>
+				<img src="img/boschbfg3000.jpg" alt="Перфоратор Bosch BFG 3000" width="144" height="128">
 				<h3>Перфоратор BOSCH BFG 3000</h3>
-				<p class="old-price">22500 P.</p>
-				<p class="price">15500 P.</p>
+				<p class="catalog-item-old-price">22500 P.</p>
+				<button class="btn btn-item-price">15500 P.</button>
 			</li>
-			<li class="catalog-item">
-				<img src="img/boschbfg6000.jpg" alt="" width="144" height="128">
+			<li class="catalog-item-title">
+				<div class="catalog-item-action">
+					<button class="btn buy-item">Купить</button>
+					<button class="btn bookmark-item">В закладки</button>
+				</div>
+				<img src="img/boschbfg6000.jpg" alt="Перфоратор Bosch BFG 6000" width="144" height="128">
 				<h3>Перфоратор BOSCH BFG 6000</h3>
-				<p class="old-price">30500 P.</p>
-				<p class="price">25500 P.</p>
+				<p class="catalog-item-old-price">30500 P.</p>
+				<button class="btn btn-item-price">25500 P.</button>
 			</li>
-			<li class="catalog-item">
-				<button class="add-item">Купить</button>
-				<button class="bookmark-item">В закладки</button>
+			<li class="catalog-item-title">
+				<div class="catalog-item-action">
+					<button class="btn buy-item">Купить</button>
+					<button class="btn bookmark-item">В закладки</button>
+				</div>
+				<img src="img/boschbfg2000.jpg" alt="Перфоратор Bosch BFG 2000" width="144" height="128">
 				<h3>Перфоратор BOSCH BFG 2000</h3>
-				<p class="price">12500 P.</p>
+				<button class="btn btn-item-price">12500 P.</button>
 			</li>
-			<li class="catalog-item">
-				<img src="img/boschbfg3000.jpg" alt="" width="144" height="128">
+			<li class="catalog-item-title">
+				<div class="catalog-item-action">
+					<button class="btn buy-item">Купить</button>
+					<button class="btn bookmark-item">В закладки</button>
+				</div>
+				<img src="img/boschbfg3000.jpg" alt="Перфоратор Bosch BFG3000" width="144" height="128">
 				<h3>Перфоратор BOSCH BFG 3000</h3>
-				<p class="old-price">22500 P.</p>
-				<p class="price">15500 P.</p>
+				<p class="catalog-item-old-price">22500 P.</p>
+				<button class="btn btn-item-price">15500 P.</button>
 			</li>
-			<li class="catalog-item">
-				<img src="img/boschbfg6000.jpg" alt="" width="144" height="128">
+			<li class="catalog-item-title">
+				<div class="catalog-item-action">
+					<button class="btn buy-item">Купить</button>
+					<button class="btn bookmark-item">В закладки</button>
+				</div>
+				<img src="img/boschbfg6000.jpg" alt="Перфоратор Bosch BFG 6000" width="144" height="128">
 				<h3>Перфоратор BOSCH BFG 6000</h3>
-				<p class="old-price">30500 P.</p>
-				<p class="price">25500 P.</p>
+				<p class="catalog-item-old-price">30500 P.</p>
+				<button class="btn btn-item-price">25500 P.</button>
 			</li>
-			<li class="catalog-item">
-				<img src="img/boschbfg2000.jpg" alt="" width="144" height="128">
+			<li class="catalog-item-title">
+				<div class="catalog-item-action">
+					<button class="btn buy-item">Купить</button>
+					<button class="btn bookmark-item">В закладки</button>
+				</div>
+				<img src="img/boschbfg2000.jpg" alt="Перфоратор Bosch BFG 2000" width="144" height="128">
 				<h3>Перфоратор BOSCH BFG 2000</h3>
-				<p class="price">12500 P.</p>
+				<button class="btn btn-item-price">12500 P.</button>
 			</li>
-			<li class="catalog-item">
-				<img src="img/boschbfg3000.jpg" alt="" width="144" height="128">
+			<li class="catalog-item-title">
+				<div class="catalog-item-action">
+					<button class="btn buy-item">Купить</button>
+					<button class="btn bookmark-item">В закладки</button>
+				</div>
+				<img src="img/boschbfg3000.jpg" alt="Перфоратор Bosch BFG3000" width="144" height="128">
 				<h3>Перфоратор BOSCH BFG 3000</h3>
-				<p class="old-price">22500 P.</p>
-				<p class="price">15500 P.</p>
+				<p class="catalog-item-old-price">22500 P.</p>
+				<button class="btn btn-item-price">15500 P.</button>
 			</li>
-			<li class="catalog-item">
-				<img src="img/boschbfg6000.jpg" alt="" width="144" height="128">
+			<li class="catalog-item-title">
+				<div class="catalog-item-action">
+					<button class="btn buy-item">Купить</button>
+					<button class="btn bookmark-item">В закладки</button>
+				</div>
+				<img src="img/boschbfg6000.jpg" alt="Перфоратор Bosch BFG 6000" width="144" height="128">
 				<h3>Перфоратор BOSCH BFG 6000</h3>
-				<p class="old-price">30500 P.</p>
-				<p class="price">25500 P.</p>
+				<p class="catalog-item-old-price">30500 P.</p>
+				<button class="btn btn-item-price">25500 P.</button>
 			</li>
-			<li class="catalog-item">
-				<img src="img/boschbfg2000.jpg" alt="" width="144" height="128">
+			<li class="catalog-item-title">
+				<div class="catalog-item-action">
+					<button class="btn buy-item">Купить</button>
+					<button class="btn bookmark-item">В закладки</button>
+				</div>
+				<img src="img/boschbfg2000.jpg" alt="Перфоратор Bosch BFG 2000" width="144" height="128">
 				<h3>Перфоратор BOSCH BFG 2000</h3>
-				<p class="price">12500 P.</p>
+				<button class="btn btn-item-price">12500 P.</button>
 			</li>
 		</ul>
+	</section>
 </main>
 
 	<footer class="main-footer">
-		
-			<section class="main-footer-top">
-				<span class="footer-logo">Техномарт</span>
-				<ul class="footer-navigation">
+		<div class="footer-top">
+			<div class="footer-info">
+				<span class="footer-logo"><a href="#">Техномарт</a></span>
+				<p class="address">
+					г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
+					+7 (812) 555-05-55
+				</p>
+			</div>
+
+			<div class="footer-menu">
+				<ul class="footer-navigation-list">
 					<li><a href="company.html">Компания</a></li>
 					<li><a href="news.html">Новости</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="delivery.html">Доставка</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
-			</section>
-
-			<section class="main-footer-mid">
-				<p>
-					г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
-					+7 (812) 555-05-55
-				</p>
-				<ul class="footer-offer">
+				<ul class="footer-offer-list">
 					<li><a href="#">Материалы</a></li>
 					<li><a href="#">Техника</a></li>
 					<li><a href="#">Инструмент</a></li>
 					<li><a href="special-offer.html">Спецпредложения</a></li>
 				</ul>
-			</section>
-
-			<section class="main-footer-bottom">
-				<p>
-					(с) 2010—2017 Компания «Техномарт»
-					Все права защищены
-				</p>
-
-				<div>
-					<a class="social button" href="#">Вконтакте</a>
-    				<a class="social button" href="#">Фейсбук</a>
-    				<a class="social button" href="#">Инстаграм</a>
-				</div>
-
-				<p>
-					Обратная связь:
-					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-				</p>
-
-				<p>
-					Разработка —
-					<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-				</p>
-			</section>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p class="footer-rights">
+				(с) 2010—2017 Компания «Техномарт»
+				Все права защищены
+			</p>
+			<ul class="social-btn-list">
+				<li class="social-btn-item"><a class="social-btn" href="#">Вконтакте</a></li>
+    			<li class="social-btn-item"><a class="social-btn" href="#">Фейсбук</a></li>
+   				<li class="social-btn-item"><a class="social-btn" href="#">Инстаграм</a></li>
+			</ul>
+			<p class="mailto">
+				Обратная связь:
+				<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+			</p>
+			<p class="site-developer">
+				Разработка —
+				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+			</p>
+		</div>
 	</footer>
 </body>
 </html>
