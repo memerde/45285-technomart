@@ -56,6 +56,7 @@
 
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<form action="https://echo.htmlacademy.ru" method="post">
 			<fieldset>
 				<legend>
 					Производители:
@@ -95,17 +96,21 @@
 				</legend>
 					<ul class="filter-list">
 						<li class="filter-item">
-							<input type="radio" name="wireless" checked>Аккумуляторные
+							<label class="filter-radio">
+								<input type="radio" name="ac-type" value="wireless" checked>Аккумуляторные
+							</label>
 						</li>
 						<li class="filter-item">
 							<label class="filter-radio">
-								<input type="radio" name="wired">Сетевые
+								<input type="radio" name="ac-type" value="wired">Сетевые
+							</label>
 						</li>
 					</ul>
 			</fieldset>
-			<button class="filter-button">
+			<button class="btn filter-button" type="button">
 				Показать
 			</button>
+			</form>
 		</section>
 
 		<section class="catalog">
@@ -113,104 +118,103 @@
 			<ul class="catalog-list">
 				<li class="catalog-item-title">
 					<div class="catalog-item-action">
-						<button class="btn buy-item">Купить</button>
-						<button class="btn bookmark-item">В закладки</button>
+						<button class="btn buy-item" type="button">Купить</button>
+						<button class="btn bookmark-item" type="button">В закладки</button>
 					</div>
 					<img src="img/boschbfg3000.jpg" alt="Перфоратор Bosch BFG 3000" width="144" height="128">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="catalog-item-old-price">22500 P.</p>
-					<button class="btn btn-item-price">15500 P.</button>
+					<button class="btn btn-item-price" type="button">15500 P.</button>
 				</li>
 				<li class="catalog-item-title">
 					<div class="catalog-item-action">
-						<button class="btn buy-item">Купить</button>
-						<button class="btn bookmark-item">В закладки</button>
+						<button class="btn buy-item" type="button">Купить</button>
+						<button class="btn bookmark-item" type="button">В закладки</button>
 					</div>
 					<img src="img/boschbfg6000.jpg" alt="Перфоратор Bosch BFG 6000" width="144" height="128">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
 					<p class="catalog-item-old-price">30500 P.</p>
-					<button class="btn btn-item-price">25500 P.</button>
+					<button class="btn btn-item-price" type="button">25500 P.</button>
 				</li>
 				<li class="catalog-item-title">
 					<div class="catalog-item-action">
 						<button class="btn buy-item">Купить</button>
-						<button class="btn bookmark-item">В закладки</button>
+						<button class="btn bookmark-item" type="button">В закладки</button>
 					</div>
 					<img src="img/boschbfg2000.jpg" alt="Перфоратор Bosch BFG 2000" width="144" height="128">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
-					<button class="btn btn-item-price">12500 P.</button>
+					<button class="btn btn-item-price" type="button">12500 P.</button>
 				</li>
 				<li class="catalog-item-title">
 					<div class="catalog-item-action">
-						<button class="btn buy-item">Купить</button>
-						<button class="btn bookmark-item">В закладки</button>
+						<button class="btn buy-item" type="button">Купить</button>
+						<button class="btn bookmark-item" type="button">В закладки</button>
 					</div>
 					<img src="img/boschbfg3000.jpg" alt="Перфоратор Bosch BFG3000" width="144" height="128">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="catalog-item-old-price">22500 P.</p>
-					<button class="btn btn-item-price">15500 P.</button>
+					<button class="btn btn-item-price" type="button">15500 P.</button>
 				</li>
 				<li class="catalog-item-title">
 					<div class="catalog-item-action">
-						<button class="btn buy-item">Купить</button>
-						<button class="btn bookmark-item">В закладки</button>
+						<button class="btn buy-item" type="button">Купить</button>
+						<button class="btn bookmark-item" type="button">В закладки</button>
 					</div>
 					<img src="img/boschbfg6000.jpg" alt="Перфоратор Bosch BFG 6000" width="144" height="128">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
 					<p class="catalog-item-old-price">30500 P.</p>
-					<button class="btn btn-item-price">25500 P.</button>
+					<button class="btn btn-item-price" type="button">25500 P.</button>
 				</li>
 				<li class="catalog-item-title">
 					<div class="catalog-item-action">
-						<button class="btn buy-item">Купить</button>
-						<button class="btn bookmark-item">В закладки</button>
+						<button class="btn buy-item" type="button">Купить</button>
+						<button class="btn bookmark-item" type="button">В закладки</button>
 					</div>
 					<img src="img/boschbfg2000.jpg" alt="Перфоратор Bosch BFG 2000" width="144" height="128">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
-					<button class="btn btn-item-price">12500 P.</button>
+					<button class="btn btn-item-price" type="button">12500 P.</button>
 				</li>
 				<li class="catalog-item-title">
 					<div class="catalog-item-action">
-						<button class="btn buy-item">Купить</button>
-						<button class="btn bookmark-item">В закладки</button>
+						<button class="btn buy-item" type="button">Купить</button>
+						<button class="btn bookmark-item" type="button">В закладки</button>
 					</div>
 					<img src="img/boschbfg3000.jpg" alt="Перфоратор Bosch BFG3000" width="144" height="128">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="catalog-item-old-price">22500 P.</p>
-					<button class="btn btn-item-price">15500 P.</button>
+					<button class="btn btn-item-price" type="button">15500 P.</button>
 				</li>
 				<li class="catalog-item-title">
 					<div class="catalog-item-action">
-						<button class="btn buy-item">Купить</button>
-						<button class="btn bookmark-item">В закладки</button>
+						<button class="btn buy-item" type="button">Купить</button>
+						<button class="btn bookmark-item" type="button">В закладки</button>
 					</div>
 					<img src="img/boschbfg6000.jpg" alt="Перфоратор Bosch BFG 6000" width="144" height="128">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
 					<p class="catalog-item-old-price">30500 P.</p>
-					<button class="btn btn-item-price">25500 P.</button>
+					<button class="btn btn-item-price" type="button">25500 P.</button>
 				</li>
 				<li class="catalog-item-title">
 					<div class="catalog-item-action">
-						<button class="btn buy-item">Купить</button>
-						<button class="btn bookmark-item">В закладки</button>
+						<button class="btn buy-item" type="button">Купить</button>
+						<button class="btn bookmark-item" type="button">В закладки</button>
 					</div>
 					<img src="img/boschbfg2000.jpg" alt="Перфоратор Bosch BFG 2000" width="144" height="128">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
-					<button class="btn btn-item-price">12500 P.</button>
+					<button class="btn btn-item-price" type="button">12500 P.</button>
 				</li>
 			</ul>
 		</section>
 
 		<section class="modal add-to-cart-pop">
 			<div class="item-added">
-				<img src="img/icon-mark.svg" width="66" height="66" alt="">
 				<p>Товар добавлен в корзину!</p>	
 			</div>
 			<div class="add-to-cart-pop-buttons">
-				<button class="btn proceed-to-checkout">Оформить заказ</button>
-				<button class="btn modal-close">Продолжить покупки</button>
-				<button class="btn modal-close">Закрыть</button>
-			</div>>
+				<button class="btn proceed-to-checkout" type="button">Оформить заказ</button>
+				<button class="btn modal-close" type="button">Продолжить покупки</button>
+				<button class="btn modal-close" type="button">Закрыть</button>
+			</div>
 		</section>
 	</main>
 
