@@ -1,0 +1,157 @@
+body {
+	margin: 0;
+	padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
+	font-size: 17px; //
+	line-height: 24px;
+	font-weight: 400;
+	color: #ffffff;
+
+	background-color: #8ed78f; 
+}
+
+.top-menu {
+	background-color: #293449;
+	list-style: none;
+}
+
+.top-menu:hover {
+	background-color: #212a3a;
+}
+
+.checkout {
+	background-color: #63a63e;
+}
+
+.checkout:hover {
+	background-color: #5fbb2d;
+}
+
+.top-menu-list,
+.footer-nav-list,
+.footer-offer-list,
+.social-btn-list,
+.delivery-list {
+	list-style: none;
+}
+
+a {
+	text-decoration:none;
+	color: #ffffff;
+}
+
+.main-phone a {
+	color: #e9292a;
+	font-size:21px;
+	line-height: 21px;
+	border: 3px solid #ffffff;
+}
+
+.main-phone p {
+	color: #32425c;
+	font-size:14px;
+	line-height: 14px;
+
+}
+
+
+.user-login,
+.user-register {
+	font: inherit;
+	font-size: 21px;
+	line-height: 42px;
+
+	color: #000000;
+	background-color: #ffffff;
+	border:none;
+}
+
+.user-login:hover,
+.user-register:hover {
+	color: #ee3643;
+}
+
+.user-login:active,
+.user-register:active {
+	color: rgb(0%, 0%, 0%, 0.3);
+}
+
+
+.top-menu a,
+.site-navigation a {
+	color: #ffffff;
+}
+
+.main-navigation {
+	background-color: #32425c;
+}
+
+.main-navigation li:hover {
+	background-color: #293449;
+}
+
+.main-navigation li a:active {
+	color: rgb(100%, 100%, 100%, 0.5);
+}
+
+.site-navigation {
+	list-style: none;
+	color: #ffffff;
+}
+
+
+.main-footer {
+	background-color: #32425c;
+}
+
+.footer-logo {
+	font-size: 30px;
+	line-height: 30px;
+	background-color: #ee3643;
+	color: #ffffff;
+}
+
+address {
+ 	font-style: normal;   
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-nav-list a {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.footer-offer-list a {
+	font-size: 18px;
+	color: #ffd180;
+}
+
+.footer-nav-list a:hover {
+	text-decoration: underline;
+}
+
+.footer-offer-list a:hover {
+	text-decoration: underline;
+}
+
+.footer-nav-list a:active {
+	font-size: 18px;
+	color: rgb(100%, 100%, 100%, 0.5);
+}
+
+.footer-offer-list a:active {
+	font-size: 18px;
+	color: rgb(100%, 82%, 50%, 0.5);
+}
+
+.footer-rights {
+	font-size: 16px;
+}
+
+.footer-bottom {
+
+	background-color: #293449;
+}
