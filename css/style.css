@@ -238,12 +238,17 @@ legend {
 	border:none;
 }
 
+
 /* заголовок категории */
 .catalog-title {
 	color: #32425c;
 	text-transform: uppercase;
 	background-color: #f2f6f8;
+	font-size: 30px;
+ 	line-height: 30px;
 }
+
+
 /* товар */
 .catalog-item {
 	font-size: 18px;
@@ -350,7 +355,10 @@ h2 {
 	font-size: 30px;
 	line-height: 30px;
 	color: #000000;
-} 
+}
+
+
+
 .company p {
 	font-family: "pt sans", arial, sans-serif;
 	font-size: 13px;
