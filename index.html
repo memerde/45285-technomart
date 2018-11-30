@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Техномарт — магазин строительных материалов</title>
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
@@ -13,19 +13,24 @@
 		<section class="top-menu">
 			<ul class="top-menu-list">
 				<li class="main-logo"><a href="#">Техномарт</a></li>
-				<li class="top-menu-item-logo"><span class="search">Поиск:</span></li>
-				<li class="top-menu-item-logo"><a href="#">Закладки: 0</a></li>
-				<li class="top-menu-item-logo"><a href="#">Корзина</a></li>
+				<li class="top-menu-item-logo">
+					<label class="search">
+						<input type="search" class="search-field" placeholder="Поиск:">
+					</label>
+				</li>
+				<li class="top-menu-item-logo bookmarks"><a href="#">Закладки: 0</a></li>
+				<li class="top-menu-item-logo cart"><a href="#">Корзина: 0</a></li>
 				<li class="checkout"><a href="#">Оформить заказ</a></li>
 			</ul>
 		</section>
-
-		<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+	<div class="header-section">
+		<p class="header-about">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
 		<div class="main-phone">
 			<a href="tel: +78125550555">+7 (812) 555-05-55</a>
 			<p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
 		</div>
+
 		<div class="user-navigation">
 			<button class="btn user-login" type="button">Войти</button>
 			<button class="btn user-register" type="button">Регистрация</button>
@@ -41,6 +46,7 @@
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
+	</div>
 	</header>
 
 	<main class="container">
@@ -68,7 +74,7 @@
 				заехав в наш оффис
 			</p>
 			<a class="contacts-map"><img src="img/map-small.jpg" width="300" height="158" alt="Карта с адресом: Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8"></a>  
-			<a class="btn btn-contacts" href="write-us.html">Заблудились? Напишите нам!</a>
+			<button class="btn write-us-btn" type="button">Заблудились? Напишите нам!</button>
 		</section>
 
 		<section class="modal map-big">
@@ -90,7 +96,7 @@
      		<label class="message-form">Ваше сообщение:
      			<textarea name="message" placeholder="В свободной форме"></textarea>
      		</label>
-     		<button class="btn submit-form" type="submit">
+     		<button class="btn submit-form-btn" type="submit">
   	   		Отправить
    	  	</button>
    	  </form>
@@ -105,7 +111,7 @@
 					Техномарт
 				</a>
 			</span>
-			<address>
+			<address class="address">
 				г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
 				<a href="tel: +78125550555">+7 (812) 555-05-55</a>
 			</address>
@@ -134,9 +140,21 @@
 			</p>
 			<p class="visually-hidden">Мы в социальных сетях:</p>
 			<ul class="social-btn-list">
-				<li class="social-btn-item"><a class="social-btn" href="#">Наш Вконтакте</a></li>
-    		<li class="social-btn-item"><a class="social-btn" href="#">Наш Фейсбук</a></li>
-   			<li class="social-btn-item"><a class="social-btn" href="#">Наш Инстаграм</a></li>
+				<li class="social-btn-item">
+					<a class="social-btn-vk" href="#" title="Наш Вконтакте">
+						<span class="visually-hidden">Наш Вконтакте</span>
+					</a>
+				</li>
+    		<li class="social-btn-item">
+    			<a class="social-btn-fb" href="#" title="Наш Фейсбук">
+    				<span class="visually-hidden">Наш Фейсбук</span>
+    			</a>
+    		</li>
+   			<li class="social-btn-item">
+   				<a class="social-btn-insta" href="#" title="Наш Инстаграм">
+   					<span class="visually-hidden">Наш Инстаграм</span>
+   				</a>
+   			</li>
 			</ul>
 			<p class="mailto">
 				Обратная связь:

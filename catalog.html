@@ -3,34 +3,42 @@
 <head>
 	<meta charset="utf-8">
 	<title>Техномарт — магазин строительных материалов</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
-		<h1 class="visually-hidden">Каталог магазина строительных материалов «Техномарт»</h1>
+		<h1 class="visually-hidden">Техномарт — магазин строительных материалов</h1>
 		<section class="top-menu">
 			<ul class="top-menu-list">
 				<li class="main-logo"><a href="#">Техномарт</a></li>
-				<li class="top-menu-item-logo"><span class="search">Поиск:</span></li>
-				<li class="top-menu-item-logo"><a href="#">Закладк: 0</a></li>
-				<li class="top-menu-item-logo"><a href="#">Корзина: 10</a></li>
+				<li class="top-menu-item-logo">
+					<label class="search">
+						<input type="search" class="search-field" placeholder="Поиск:">
+					</label>
+				</li>
+				<li class="top-menu-item-logo bookmarks"><a href="#">Закладки: 0</a></li>
+				<li class="full cart"><a href="#">Корзина: 10</a></li>
 				<li class="checkout"><a href="#">Оформить заказ</a></li>
 			</ul>
 		</section>
-
-		<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+	<div class="header-section">
+		<p class="header-about">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
 		<div class="main-phone">
 			<a href="tel: +78125550555">+7 (812) 555-05-55</a>
 			<p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
 		</div>
+
 		<div class="user-navigation">
-			<span class="btn-profile">
-				<a href="profile.html">
-					Равшан Джамшутович
-				</a>
-			</span>
-			<a href="my-orders">Мои заказы</a>
-			<a href="my-account">Личный кабинет</a>
+			<button class="btn user-profile" type="button">
+				Равшан Джамшутович
+			</button>
+			<p class="my-profile">
+				<a href="my-orders" class="my-orders">Мои заказы</a>
+				<a href="my-account" class="my-account">Личный кабинет</a>
+			</p>
 		</div>
 		<nav class="main-navigation">
 			<ul class="site-navigation">
@@ -42,6 +50,7 @@
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
+	</div>
 	</header>
 
 	<main class="container">
@@ -115,8 +124,10 @@
 
 		<section class="catalog">
 			<h2 class="visually-hidden">Список товаров</h2>
+			<h2 class="catalog-title">Перфораторы</h2>
 			<ul class="catalog-list">
-				<li class="catalog-item-title">
+				<li class="catalog-item">
+				
 					<div class="catalog-item-action">
 						<button class="btn buy-item" type="button">Купить</button>
 						<button class="btn bookmark-item" type="button">В закладки</button>
@@ -125,8 +136,9 @@
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="catalog-item-old-price">22500 P.</p>
 					<button class="btn btn-item-price" type="button">15500 P.</button>
+				
 				</li>
-				<li class="catalog-item-title">
+				<li class="catalog-item">
 					<div class="catalog-item-action">
 						<button class="btn buy-item" type="button">Купить</button>
 						<button class="btn bookmark-item" type="button">В закладки</button>
@@ -136,7 +148,7 @@
 					<p class="catalog-item-old-price">30500 P.</p>
 					<button class="btn btn-item-price" type="button">25500 P.</button>
 				</li>
-				<li class="catalog-item-title">
+				<li class="catalog-item">
 					<div class="catalog-item-action">
 						<button class="btn buy-item">Купить</button>
 						<button class="btn bookmark-item" type="button">В закладки</button>
@@ -145,7 +157,7 @@
 					<h3>Перфоратор BOSCH BFG 2000</h3>
 					<button class="btn btn-item-price" type="button">12500 P.</button>
 				</li>
-				<li class="catalog-item-title">
+				<li class="catalog-item">
 					<div class="catalog-item-action">
 						<button class="btn buy-item" type="button">Купить</button>
 						<button class="btn bookmark-item" type="button">В закладки</button>
@@ -155,7 +167,7 @@
 					<p class="catalog-item-old-price">22500 P.</p>
 					<button class="btn btn-item-price" type="button">15500 P.</button>
 				</li>
-				<li class="catalog-item-title">
+				<li class="catalog-item">
 					<div class="catalog-item-action">
 						<button class="btn buy-item" type="button">Купить</button>
 						<button class="btn bookmark-item" type="button">В закладки</button>
@@ -165,7 +177,7 @@
 					<p class="catalog-item-old-price">30500 P.</p>
 					<button class="btn btn-item-price" type="button">25500 P.</button>
 				</li>
-				<li class="catalog-item-title">
+				<li class="catalog-item">
 					<div class="catalog-item-action">
 						<button class="btn buy-item" type="button">Купить</button>
 						<button class="btn bookmark-item" type="button">В закладки</button>
@@ -174,7 +186,7 @@
 					<h3>Перфоратор BOSCH BFG 2000</h3>
 					<button class="btn btn-item-price" type="button">12500 P.</button>
 				</li>
-				<li class="catalog-item-title">
+				<li class="catalog-item">
 					<div class="catalog-item-action">
 						<button class="btn buy-item" type="button">Купить</button>
 						<button class="btn bookmark-item" type="button">В закладки</button>
@@ -184,7 +196,7 @@
 					<p class="catalog-item-old-price">22500 P.</p>
 					<button class="btn btn-item-price" type="button">15500 P.</button>
 				</li>
-				<li class="catalog-item-title">
+				<li class="catalog-item">
 					<div class="catalog-item-action">
 						<button class="btn buy-item" type="button">Купить</button>
 						<button class="btn bookmark-item" type="button">В закладки</button>
@@ -194,7 +206,7 @@
 					<p class="catalog-item-old-price">30500 P.</p>
 					<button class="btn btn-item-price" type="button">25500 P.</button>
 				</li>
-				<li class="catalog-item-title">
+				<li class="catalog-item">
 					<div class="catalog-item-action">
 						<button class="btn buy-item" type="button">Купить</button>
 						<button class="btn bookmark-item" type="button">В закладки</button>
@@ -213,7 +225,7 @@
 			<div class="add-to-cart-pop-buttons">
 				<button class="btn proceed-to-checkout" type="button">Оформить заказ</button>
 				<button class="btn modal-close" type="button">Продолжить покупки</button>
-				<button class="btn modal-close" type="button">Закрыть</button>
+				<button class="btn modal-close-x" type="button">Закрыть</button>
 			</div>
 		</section>
 	</main>
@@ -225,10 +237,10 @@
 					Техномарт
 				</a>
 			</span>
-			<p class="address">
-				г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
-				+7 (812) 555-05-55
-			</p>
+			<address class="address">
+				г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
+				<a href="tel: +78125550555">+7 (812) 555-05-55</a>
+			</address>
 		</div>
 		<div class="footer-nav">
 			<ul class="footer-nav-list">
@@ -249,14 +261,26 @@
 
 		<div class="footer-bottom">
 			<p class="footer-rights">
-				© 2010—2017 Компания «Техномарт»
+				© 2010—2017 Компания «Техномарт» <br>
 				Все права защищены
 			</p>
 			<p class="visually-hidden">Мы в социальных сетях:</p>
 			<ul class="social-btn-list">
-				<li class="social-btn-item"><a class="social-btn" href="#">Наш Вконтакте</a></li>
-    		<li class="social-btn-item"><a class="social-btn" href="#">Наш Фейсбук</a></li>
-   			<li class="social-btn-item"><a class="social-btn" href="#">Наш Инстаграм</a></li>
+				<li class="social-btn-item">
+					<a class="social-btn-vk" href="#" title="Наш Вконтакте">
+						<span class="visually-hidden">Наш Вконтакте</span>
+					</a>
+				</li>
+    		<li class="social-btn-item">
+    			<a class="social-btn-fb" href="#" title="Наш Фейсбук">
+    				<span class="visually-hidden">Наш Фейсбук</span>
+    			</a>
+    		</li>
+   			<li class="social-btn-item">
+   				<a class="social-btn-insta" href="#" title="Наш Инстаграм">
+   					<span class="visually-hidden">Наш Инстаграм</span>
+   				</a>
+   			</li>
 			</ul>
 			<p class="mailto">
 				Обратная связь:
