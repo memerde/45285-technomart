@@ -2,19 +2,26 @@ body {
 	margin: 0;
 	padding: 0;
 
-    font-family: "PT Sans", Arial, sans-serif;
-    font-family: "Cuprum", Arial, sans-serif;
+	/* font-family: "PT Sans", Arial, sans-serif; */
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px; 
 	line-height: 17px;
 	font-weight: 400;
 	
-
-	background-color: #8ed78f; /* временный цвет*/
+	background-color: #8ed78f; /* временный цвет чтобы в браузере не сливалось*/
 }
 
 a {
 	text-decoration:none;
 	color: #ffffff;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
 
 .top-menu-list,
@@ -29,125 +36,123 @@ a {
 	list-style: none;
 }
 
-
 /* верхняя плашка */
 .top-menu {
 	background-color: #293449;
 }
 
-
 /* логотипа и его состояния */
-.main-logo {
+.main-logo a{
 	background-color: #ee3643;
-	color: #ffffff;
 	box-shadow: 0px 5px #b52933;
 
 	font-size:24px;
 	line-height: 24px;
 	text-transform: uppercase;
 }
-.main-logo:hover {
+
+.main-logo a:hover {
 	background-color: #ca2c37;
 }
-.main-logo:active {
+
+.main-logo a:active {
 	background-color: #ba2732;
 }
-
 
 /* поле поиска и его состояния*/
 .search-field {
 	border: none;
-	color: #ffffff;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 	font: inherit;
-}
-.search-field:hover {
-	background-color: #212a3a;
 	color: #ffffff;
 }
+
+.search-field:hover {
+	color: #ffffff;
+	background-color: #212a3a;
+}
+
 .search-field:focus {
-	background: #ffffff;
 	color: #000000;
+	background: #ffffff;
 }
+
 .search-field::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #ffffff;
-    opacity: 1; /* Firefox */
+	color: #ffffff;
+	opacity: 1; /* Firefox */
 }
 
-
-/* закладки */
-.bookmarks {
+/* закладки */	
+.top-menu-bookmarks a{
 	font-size: 17px;
 	line-height: 17px;
 }
-.bookmarks:hover {
+
+.top-menu-bookmarks a:hover {
 	background-color: #212a3a;
 }
-.bookmarks:active {
+
+.top-menu-bookmarks a:active{
+	color: rgba(255, 255, 255, 0.6);
 	background-color: #161d29;
 }
-.bookmarks a:active{
-	color: rgb(100%, 100%, 100%, 0.6);
-}
-
 
 /* корзина и состояния */
-.cart {
+.top-menu-cart a{
 	font-size: 17px;
 	line-height: 17px;
 }
-.cart:hover {
+
+.top-menu-cart a:hover {
 	background-color: #212a3a;
 }
-.cart:active {
+
+.top-menu-cart a:active {
+	color: rgba(255, 255, 255, 0.6);
 	background-color: #161d29;
 }
-.cart a:active {
-	color: rgb(100%, 100%, 100%, 0.6);
-}
-.full.cart {
+
+.full.top-menu-cart a{
 	background-color: #ee3643;
 }
 
-
 /* оформлени-заказа и состояния */
-.checkout {
+.top-menu-checkout a{
 	font-size: 17px;
 	line-height: 17px;
 	background-color: #63a63e;
 }
-.checkout:hover {
+
+.top-menu-checkout a:hover {
 	background-color: #5fbb2d;
 }
-.checkout:active {
+
+.top-menu-checkout a:active {
+	color: rgba(255, 255, 255, 0.6);
 	background-color: #518534;
 }
-.checkout a:active {
-	color: rgb(100%, 100%, 100%, 0.6);
-}
-
 
 /* описание магазина */
 .header-about {
-	color: #ee3643;
+	font-style: italic;
 	font-size:16px;
 	line-height: 23px;
-	font-style: italic;
+	color: #ee3643;
 }
 
 /* телефон и адрес в шапке */
 .main-phone a {
-	color: #e9292a;
 	font-size:21px;
 	line-height: 21px;
+	color: #e9292a;
 	border: 3px solid #ffffff;
 }
+
 .main-phone p {
-	color: #32425c;
 	font-size:14px;
 	line-height: 14px;
+	color: #32425c;
 }
-
 
 /* кнопки регистрации */
 .user-login,
@@ -156,80 +161,89 @@ a {
 	font: inherit;
 	font-size: 21px;
 	line-height: 21px;
-
 	color: #000000;
 	background-color: #ffffff;
 	border:none;
 }
+
 .user-login:hover,
 .user-register:hover {
 	color: #ee3643;
 }
+
 .user-login:active,
 .user-register:active {
-	color: rgb(0%, 0%, 0%, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
+
 .user-profile:active {
-	color: rgb(0%, 0%, 0%, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
+
 .my-orders,
 .my-account {
 	color: #32425c;
 	text-decoration: underline;
 }
+
 .my-orders:hover,
 .my-account:hover {
 	color: #ee3643;
 }
+
 .my-orders:active,
 .my-account:active {
-	color: rgb(20%, 26%, 36%, 0.3);
+	color: rgba(50, 66, 92, 0.3);
 }
 
 /* фон меню и состояния*/
 .main-navigation {
-	background-color: #32425c;
 	font-size: 17px;
 	line-height: 17px;
+	background-color: #32425c;
 }
+
 .main-navigation ul {
 	box-shadow: 0px 5px #293449;
 }
-.main-navigation li:hover {
+
+.main-navigation a:hover {
 	background-color: #293449;
 }
-.main-navigation li a:active {
-	color: rgb(100%, 100%, 100%, 0.5);
+
+.main-navigation a:active {
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .header-section {
 	background-color: #f2f6f8; 
 }
 
-
-
 /* ---------- main ---------- */
 
-
 /* фильтры*/
-fieldset {
+.filter-fieldset {
 	border: none;
 }
-legend {
+
+.filter-legend {
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 30px;
+	text-transform: uppercase;
 	color: #000000;
-	font-family: "pt sans", arial, sans-serif;
 }
+
 .filter-item {
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 20px;
-	color: #000000;
-	font-family: "pt sans", arial, sans-serif;
 	text-transform: uppercase;
+	color: #000000;
 }
+
 .filter-button {
-    font-family: "pt sans", arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -238,59 +252,53 @@ legend {
 	border:none;
 }
 
-
 /* заголовок категории */
 .catalog-title {
-	color: #32425c;
-	text-transform: uppercase;
-	background-color: #f2f6f8;
 	font-size: 30px;
  	line-height: 30px;
+ 	text-transform: uppercase;
+ 	color: #32425c;
+	background-color: #f2f6f8;
 }
-
 
 /* товар */
 .catalog-item {
 	font-size: 18px;
-	width: 220px;
 	line-height: 20px;
+	width: 220px;
 	background-color: #ffffff;
 	border: 1px solid #e5e5e5;
 }
 
-
 /* название товара */
-h3 {
+.item-title" {
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
-	font-family: "pt sans", arial, sans-serif;
 }
-
 
 /* старая цена*/
 .catalog-item-old-price {
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
-	color: #999999;
 	text-decoration: line-through;
-	font-family: "pt sans", arial, sans-serif;
+	color: #999999;
 }
 
-
 /* выравнивание названия товара и старой цены */
-h3,
+.item-title,
 .catalog-item-old-price {
 	text-align: center;
 }
-
 
 /* кнопка цены */
 .btn-item-price {
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
-    font-family: "pt sans", arial, sans-serif;
+	margin-right: auto;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 700;
@@ -298,19 +306,16 @@ h3,
 	color: #ffffff;
 	background-color: #ee3643;
 	border:none;
-
 }
-
 
 /* кнопка купить */
 .buy-item {
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
-    margin-bottom:8px;
-    font-family: "pt sans", arial, sans-serif;
+  margin-right: auto;
+  margin-bottom:8px;
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 14px;
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #63a63e;
@@ -318,21 +323,21 @@ h3,
 	box-shadow: 0px 3px #367315;
 	border-radius: 2px;
 }
+
 .buy-item:hover {
 	background-color: #5fbb2d;
 }
+
 .buy-item:active {
 	background-color: #518534;
 	box-shadow: 0px 3px #518534;
 }
 
-
 /* кнопка закладка */
 .bookmark-item {
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
-    font-family: "pt sans", arial, sans-serif;
+  margin-right: auto;
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -342,44 +347,36 @@ h3,
 	box-shadow: none;
 	border-radius: 2px;
 }
+
 .bookmark-item:hover {
 	border:3px solid #32425c;
 }
+
 .bookmark-item:active {
-	border:3px solid #c1c6ce;
 	color: #c1c6ce;
+	border:3px solid #c1c6ce;
 }
 
 /* название раздела */
-h2 {
+.section-title {
 	font-size: 30px;
 	line-height: 30px;
+	text-transform: uppercase;
 	color: #000000;
 }
 
-
-
-.company p {
-	font-family: "pt sans", arial, sans-serif;
+/* -- о компании -- */
+.company p,
+.contacts p {
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
 }
+
 .delivery-item {
 	font-size: 18px;
 	line-height: 20px;
-	color: #000000;
-}
-.btn-more-info {
-	background-color: #ee3643;
-	font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;
-}
-.contacts p {
-	font-family: "pt sans", arial, sans-serif;
-	font-size: 13px;
-	line-height: 24px;
 	color: #000000;
 }
 
@@ -395,11 +392,12 @@ h2 {
 }
 
 .add-to-cart-pop-buttons {
-	background-color: #f1f1f1;
 	width:500px;
 	height:50px;
+	background-color: #f1f1f1;
 }
 
+.more-info-btn,
 .write-us-btn,
 .submit-form-btn,
 .proceed-to-checkout {
@@ -423,9 +421,8 @@ h2 {
 	border:none;
 	border-radius: 2px;
 }
-}
 
-
+/* форма write us*/
 .name-form,
 .email-form,
 .messge-form {
@@ -435,23 +432,24 @@ h2 {
 	color: #000000;
 }
 
-input[type=text],
-textarea {
-	font-family: "pt sans", arial, sans-serif;
+.name-area,
+.message-area,
+.email-area {
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #a9a9a9;
-    border: 2px solid #dee3e4;
+	border: 2px solid #dee3e4;
 }
 
 /* ---------- начало футера ---------- */
 .footer-bottom p {
 	color: #ffffff;
 }
+
 .main-footer {
 	background-color: #32425c;
 }
-
 
 /* лого */
 .footer-logo {
@@ -462,7 +460,6 @@ textarea {
 	box-shadow: 0px 5px #b52933;
 }
 
-
 /* адрес */
 .address {
  	font-style: normal;   
@@ -470,7 +467,6 @@ textarea {
 	line-height: 24px;
 	color: #ffffff;
 }
-
 
 /* цвет ссылки навигации */
 .footer-nav-list a {
@@ -484,9 +480,8 @@ textarea {
 .footer-nav-list a:active {
 	font-size: 18px;
 	line-height: 18px;
-	color: rgb(100%, 100%, 100%, 0.5);
+	color: rgba(255, 255, 255, 0.5);
 }
-
 
 /* цвет ссылки предложений */
 .footer-offer-list a {
@@ -494,21 +489,21 @@ textarea {
 	line-height: 18px;
 	color: #ffd180;
 }
+
 .footer-offer-list a:hover {
 	text-decoration: underline;
 }
+
 .footer-offer-list a:active {
 	font-size: 18px;
 	line-height: 18px;
-	color: rgb(100%, 82%, 50%, 0.5);
+	color: rgba(255, 209, 128, 0.5);
 }
-
 
 /* нижний футер */
 .footer-bottom {
 	background-color: #293449;
 }
-
 
 /* права */
 .footer-rights {
@@ -517,68 +512,72 @@ textarea {
 	color: #ffffff;
 }
 
-
 /* обратная связь */
-.mailto p{
+.mailto p {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
 }
-.mailto a{
+
+.mailto a {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffd180;
 }
+
 .mailto a:hover {
 	text-decoration: underline;
 }
+
 .mailto a:active {
 	color: #ee3643;
 }
 
-
 /* девелоп */
-.site-developer p{
+.site-developer p {
 	font-size: 16px;
 	line-height: 18px;
 }
-.site-developer a{
+
+.site-developer a {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffd180;
 }
+
 .site-developer a:hover {
 	text-decoration: underline;
 }
+
 .site-developer a:active {
 	color: #ee3643;
 }
-
 
 /* соцкнопки */
 .social-btn-item {
 	border-radius: 50px;
 	height: 40px;
 	width: 40px;
-  	background: #212a3a;
+  background-color: #212a3a;
 }
-.social-btn-item:hover {
-  	background: #ee3643;
-}
+
+.social-btn-item:hover,
 .social-btn-item:active {
-  	background: #ee3643;
+  	background-color: #ee3643;
 }
 
 .social-btn-vk {
-	background-image: url("../img/vk-icon.svg");
+	background-image: url("../img/vk-icon.svg"); 
 	background-repeat: no-repeat;
 	background-position: top center;
 }
+
 .social-btn-fb {
 	background-image: url("../img/fb-icon.svg");
 	background-repeat: no-repeat;
 	background-position: top center;
 }
+
 .social-btn-insta {
 	background-image: url("../img/insta-icon.svg");
 	background-repeat: no-repeat;

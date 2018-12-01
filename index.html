@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Техномарт — магазин строительных материалов</title>
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<!-- <link href="css/normalize.css" rel="stylesheet"> -->
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -13,14 +13,13 @@
 		<section class="top-menu">
 			<ul class="top-menu-list">
 				<li class="main-logo"><a href="#">Техномарт</a></li>
-				<li class="top-menu-item-logo">
-					<label class="search">
-						<input type="search" class="search-field" placeholder="Поиск:">
-					</label>
+				<li class="top-menu-item">
+					<label class="search visually-hidden" for="search">Поиск по каталогу</label>
+						<input type="search" id="search" class="search-field" placeholder="Поиск:">
 				</li>
-				<li class="top-menu-item-logo bookmarks"><a href="#">Закладки: 0</a></li>
-				<li class="top-menu-item-logo cart"><a href="#">Корзина: 0</a></li>
-				<li class="checkout"><a href="#">Оформить заказ</a></li>
+				<li class="top-menu-item top-menu-bookmarks"><a href="#">Закладки: 0</a></li>
+				<li class="top-menu-item top-menu-cart"><a href="#">Корзина: 0</a></li>
+				<li class="top-menu-item top-menu-checkout"><a href="#">Оформить заказ</a></li>
 			</ul>
 		</section>
 	<div class="header-section">
@@ -51,7 +50,7 @@
 
 	<main class="container">
 		<section class="company">
-			<h2>Компания «Техномарт»</h2>
+			<h2 class="section-title">Компания «Техномарт»</h2>
 			<p>
 				Настоящий мужской шоппинг начинается здесь! огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
 			</p>
@@ -64,11 +63,11 @@
 				<li class="delivery-item">Автотрейдинг</li>
 				<li class="delivery-item">ЖелДорЭкспедиция</li>
 			</ul>
-			<a class="btn btn-more-info" href="company.html">Подробнее о компании</a>
+			<a class="btn more-info-btn" href="company.html">Подробнее о компании</a>
 		</section>
 
 		<section class="contacts">
-			<h2>Контакты</h2>
+			<h2 class="section-title">Контакты</h2>
 			<p>
 				Вы можете забрать товар сами,<br>
 				заехав в наш оффис
@@ -88,19 +87,19 @@
   		</h2>
     	<form class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
    			<label class="name-form">Ваше имя:
-     			<input type="text" name="name" placeholder="Имя Фамилия">
+     			<input type="text" name="name" placeholder="Имя Фамилия" class="name-area">
      		</label>
      		<label class="email-form">Ваш e-mail:
-     			<input type="text" name="email" placeholder="email@example.com">
+     			<input type="text" name="email" placeholder="email@example.com" class="email-area">
       		</label> 	
      		<label class="message-form">Ваше сообщение:
-     			<textarea name="message" placeholder="В свободной форме"></textarea>
+     			<textarea name="message" placeholder="В свободной форме" class="message-area"></textarea>
      		</label>
      		<button class="btn submit-form-btn" type="submit">
   	   		Отправить
    	  	</button>
    	  </form>
-      <button class="btn modal-close" type="button">Закрыть</button>
+      <button class="btn modal-close-x" type="button">Закрыть</button>
 		</section>
 	</main>
 
