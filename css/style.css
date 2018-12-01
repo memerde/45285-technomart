@@ -312,8 +312,8 @@ a {
 .buy-item {
 	display: block;
 	margin-left: auto;
-  margin-right: auto;
-  margin-bottom:8px;
+  	margin-right: auto;
+  	margin-bottom:8px;
 	font-size: 14px;
 	line-height: 14px;
 	text-transform: uppercase;
@@ -337,7 +337,7 @@ a {
 .bookmark-item {
 	display: block;
 	margin-left: auto;
-  margin-right: auto;
+  	margin-right: auto;
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
