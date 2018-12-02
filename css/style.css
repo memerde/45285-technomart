@@ -2,8 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 
-	/* font-family: "PT Sans", Arial, sans-serif; */
-	font-family: "Cuprum", Arial, sans-serif;
+	/* font-family: "PT Sans", "Arial", sans-serif; */
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px; 
 	line-height: 17px;
 	font-weight: 400;
@@ -83,30 +83,18 @@ a {
 }
 
 /* закладки */	
-.top-menu-bookmarks a{
-	font-size: 17px;
-	line-height: 17px;
-}
-
-.top-menu-bookmarks a:hover {
-	background-color: #212a3a;
-}
-
-.top-menu-bookmarks a:active{
-	color: rgba(255, 255, 255, 0.6);
-	background-color: #161d29;
-}
-
-/* корзина и состояния */
+.top-menu-bookmarks a,
 .top-menu-cart a{
 	font-size: 17px;
 	line-height: 17px;
 }
 
+.top-menu-bookmarks a:hover,
 .top-menu-cart a:hover {
 	background-color: #212a3a;
 }
 
+.top-menu-bookmarks a:active,
 .top-menu-cart a:active {
 	color: rgba(255, 255, 255, 0.6);
 	background-color: #161d29;
@@ -227,7 +215,7 @@ a {
 }
 
 .filter-legend {
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -235,7 +223,7 @@ a {
 }
 
 .filter-item {
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	text-transform: uppercase;
@@ -243,7 +231,7 @@ a {
 }
 
 .filter-button {
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -272,7 +260,7 @@ a {
 
 /* название товара */
 .item-title" {
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
@@ -280,7 +268,7 @@ a {
 
 /* старая цена*/
 .catalog-item-old-price {
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	text-decoration: line-through;
@@ -298,7 +286,7 @@ a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 700;
@@ -368,7 +356,7 @@ a {
 /* -- о компании -- */
 .company p,
 .contacts p {
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
@@ -435,7 +423,7 @@ a {
 .name-area,
 .message-area,
 .email-area {
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #a9a9a9;
@@ -567,20 +555,26 @@ a {
 }
 
 .social-btn-vk {
+	display: block;
+	height: 40px;
 	background-image: url("../img/vk-icon.svg"); 
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: center;
 }
 
 .social-btn-fb {
+	display: block;
+	height: 40px;
 	background-image: url("../img/fb-icon.svg");
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: center;
 }
 
 .social-btn-insta {
+	display: block;
+	height: 40px;
 	background-image: url("../img/insta-icon.svg");
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: center;
 }
 
