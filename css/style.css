@@ -41,24 +41,45 @@ a {
 
 
 .breadcrumbs-item {
-
   margin: 0;
   padding: 0;
+}
+
+.main-header {
+  padding: 0;
+  margin: 0;
+  background-color: #f1f5f7;
 }
 
 /* верхняя плашка */
 .top-menu {
   background-color: #293449;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 46px;
+}
+
+.top-menu-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap:wrap;
 }
 
 /* логотипа и его состояния */
 .main-logo a {
+  box-sizing: border-box;
+  width: 220px;
+  display: block;
   background-color: #ee3643;
   box-shadow: 0 5px #b52933;
-
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 55px;
+ padding-right: 55px;
 }
 
 .main-logo a:hover {
@@ -71,17 +92,49 @@ a {
 
 /* поле поиска и его состояния*/
 .search-field {
+  margin: 0;
+  display:block;
+  width: 270px;
+  padding-top: 11px;               /*       --------------- 12px -----------       */
+  padding-right: 17px;
+  padding-bottom: 12px;
+  padding-left: 48px;
   border: none;
   background-color: transparent;
   font: inherit;
   color: #ffffff;
 }
 
+.search-item, 
+.top-menu-bookmarks,
+.top-menu-cart {
+  position: relative;
+}
+ 
+.search-form::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  color: white;
+  top: 12px;
+  left:17px;
+  position: absolute;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.search-form:hover::before,
+.top-menu-bookmarks:hover::before,
+.top-menu-cart:hover::before {
+  opacity: 1;
+}
+ 
 .search-field:hover {
   color: #ffffff;
   background-color: #212a3a;
 }
-
+ 
 .search-field:focus {
   color: #000000;
   background: #ffffff;
@@ -97,13 +150,54 @@ a {
 /* закладки */
 .top-menu-bookmarks a,
 .top-menu-cart a {
+  display: block;
+  box-sizing: border-box;
+  width: 150px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-size: 17px;
   line-height: 17px;
+  padding-left: 44px;
+}
+
+.top-menu-cart a {
+  padding-left: 49px;
+}
+
+.top-menu-bookmarks::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  color: white;
+  top: 12px;
+  left: 17px;
+  position: absolute;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.top-menu-cart::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  color: white;
+  top: 12px;
+  left: 18px;
+  position: absolute;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .top-menu-bookmarks a:hover,
 .top-menu-cart a:hover {
   background-color: #212a3a;
+}
+
+.top-menu-bookmarks:active::before,
+.top-menu-cart:active::before {
+opacity: 0.5;
 }
 
 .top-menu-bookmarks a:active,
@@ -118,9 +212,15 @@ a {
 
 /* оформлени-заказа и состояния */
 .top-menu-checkout a {
+  display: block;
+  box-sizing: border-box;
+  width: 150px;
+  padding-top: 12px; 
+  padding-left: 20px;
   font-size: 17px;
   line-height: 17px;
   background-color: #63a63e;
+  padding-bottom: 12px; 
 }
 
 .top-menu-checkout a:hover {
@@ -132,29 +232,142 @@ a {
   background-color: #518534;
 }
 
+/* --------------------------------------------------*/
 /* описание магазина */
+
+.header-section {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 41px;
+}
+ 
+ .header-section p {
+  margin: 0;
+}
+
+
 .header-about {
+  display: block;
+  box-sizing: border-box;
+
+  font: inherit;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
+
+  padding-left: 52px;
+  padding-top: 3px;
+  margin: 0;
+  width: 320px;
+ 
+  
 }
 
 /* телефон и адрес в шапке */
-.main-phone a {
+.main-phone {
+  width: 270px;
+  position: relative;
+}
+
+.main-phone::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-phone.svg");
+  width: 19px;
+  height: 19px;
+  top: 12px;
+  left: 16px;
+
+}
+
+  .main-phone a {
+  display: block;
+  box-sizing: border-box;
   font-size: 21px;
   line-height: 21px;
+  
+
   color: #e9292a;
   border: 3px solid #ffffff;
+  padding: 10px 40px 8px 71px;
+  
 }
 
 .main-phone p {
   font-size: 14px;
   line-height: 14px;
   color: #32425c;
+  display: block;
+  
+  box-sizing: border-box;
+  padding-top: 9px;
+  padding-left:9px;
+
 }
+ 
+
 
 /* кнопки регистрации */
+
+.user-navigation {
+  margin-left: auto;
+}
+
+.user-login {
+  box-sizing: border-box;
+  width: 121px;
+  margin: 0;
+  padding: 0;
+   padding-top: 13px;
+   padding-left: 21px; 
+   padding-bottom: 11px;
+  margin-right: 6px;
+  position: relative;
+}
+
+.user-login::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  top: 14px;
+  left: 14px;
+  position: absolute;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+}
+
+.user-login:hover::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  top: 14px;
+  left: 14px;
+  position: absolute;
+  background-image: url("../img/icon-login-blue.svg");
+  background-repeat: no-repeat;
+}
+
+.user-login:active::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  top: 14px;
+  left: 14px;
+  position: absolute;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+}
+
+
+.user-register {
+  box-sizing: border-box;
+  width: 150px;
+  padding-top: 13px;
+  text-align: center;
+  padding-bottom: 11px;
+}
+
 .user-login,
 .user-register,
 .user-profile {
@@ -199,14 +412,50 @@ a {
 }
 
 /* фон меню и состояния*/
+.site-navigation {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+  flex-wrap: wrap;
+}
+
+.site-navigation li:nth-child(1n+1) a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.site-navigation li:nth-child(6) a {
+  padding-right: 33px;
+}
+
+.site-navigation li:first-child a {
+  padding-left: 52px;
+  padding-right: 33px;
+}
+
+.site-navigation li:last-child a {
+
+  padding-right: 52px;
+}
+
+
+
 .main-navigation {
   font-size: 17px;
   line-height: 17px;
   background-color: #32425c;
+ 
 }
 
 .main-navigation ul {
   box-shadow: 0 5px #293449;
+}
+
+.main-navigation a {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 18px; 
 }
 
 .main-navigation a:hover {
@@ -217,9 +466,7 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.header-section {
-  background-color: #f2f6f8;
-}
+
 
 /* ---------- main ---------- */
 
@@ -598,93 +845,26 @@ a {
 
 /* ----------------------------------------------------------------------- */
 
-.main-header {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 20px;
-  background-color: rgba(250, 0, 0, 0.1);
-  min-height: 320px;
-}
-
+ 
 .container {
   width: 940px;
-  background-color: rgba(250, 0, 0, 0.2);
   padding: 0 10px;
   margin: 0 auto;
 }
 
-.top-menu {
-  height: 42px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 45px;
-  background-color: rgba(250, 0, 0, 0.2);
-}
 
-.top-menu-list {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.left-side {
-  padding: 0;
-  margin: 0;
-  width: 490px;
-  background-color: rgba(250, 0, 0, 0.3);
-}
-
-.right-side {
-  padding: 0;
-  margin: 0;
-  width: 440px;
-  background-color: rgba(250, 0, 0, 0.3);
-}
 
 .my-profile {
   margin: 0;
   padding: 0;
 }
 
-.header-section {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 45px;
-}
 
-.header-about {
-  width: 300px;
-  margin: 0;
-  padding: 0;
-  margin-right: 20px;
-  background-color: rgba(250, 0, 0, 0.3);
-}
 
-.main-phone {
-  width: 280px;
-  background-color: rgba(250, 0, 0, 0.3);
-}
 
-.user-navigation {
-  margin-left: auto;
-  background-color: rgba(250, 0, 0, 0.3);
-}
 
-.site-navigation {
-  padding: 0;
-  margin: 0;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-}
 
-.main-navigation {
-  padding: 0;
-  margin: 0;
-}
+
 
 .section-wrapper {
   display: flex;
