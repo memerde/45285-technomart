@@ -103,11 +103,7 @@ img {
 
   box-sizing: border-box;
   width: 220px;
-  padding-top: 10px;
-  padding-right: 55px;
-  padding-bottom: 8px;
-  padding-left: 55px;
-
+  padding: 10px 55px 8px 55px;
   text-transform: uppercase;
 
   background-color: #ee3643;
@@ -129,11 +125,8 @@ img {
 
   width: 270px;
   margin: 0;
-  padding-top: 12px;
-  padding-right: 17px;
-  padding-bottom: 13px;
-  padding-left: 48px;
-
+ 
+padding: 12px 17px 13px 48px;
   color: #ffffff;
   border: none;
   background-color: transparent;
@@ -605,7 +598,8 @@ img {
   padding: 0;
 }
 
-.shop-offer { margin: 0;
+.shop-offer {
+  margin: 0;
   padding: 0;
   margin-bottom: 53px;
 }
@@ -618,18 +612,18 @@ img {
   justify-content: space-between;
   padding-left: 28px;
   padding-right: 24px;
- 
-  background-color:#f9f5f0;
+
+  background-color: #f9f5f0;
   margin-bottom: 20px;
 }
- 
+
 .catalog-columns
 
 /* -----  отступы до номера страницы  -----*/
   {
   display: flex;
 
- 
+
 
   justify-content: space-between;
 }
@@ -728,6 +722,7 @@ img {
   color: #32425c;
   background-color: #f2f6f8;
 }
+
 /*
 .catalog-item-action {
   padding-top: 44px;
@@ -943,8 +938,8 @@ img {
   min-height: 409px;
   margin: 0;
   padding: 0;
- margin-bottom: 54px;
-  
+  margin-bottom: 54px;
+
   background-color: gray;
 }
 
@@ -955,8 +950,8 @@ img {
   min-height: 448px;
   margin: 0;
   padding: 0;
- margin-bottom: 32px;
- 
+
+
 }
 
 .popular-trade-marks
@@ -967,7 +962,7 @@ img {
   margin: 0;
   padding: 0;
 
-  background-color: gray;
+
 }
 
 .services
@@ -1103,7 +1098,7 @@ img {
 .more-info-btn,
 .write-us-btn,
 .submit-form-btn,
-.proceed-to-checkout{
+.proceed-to-checkout {
   font: inherit;
   font-size: 14px;
   line-height: 18px;
@@ -1118,8 +1113,7 @@ img {
 }
 
 .more-info-btn,
-.write-us-btn
-  {
+.write-us-btn {
   display: block;
 
   width: 220px;
@@ -1133,21 +1127,24 @@ img {
 .write-us-btn {
   width: 300px;
 }
+
 .show-all-goods-btn {
-font: inherit;
+  font: inherit;
   font-size: 14px;
   line-height: 18px;
-    width:253px; 
-color: #ffffff;
+  width: 253px;
+  color: #ffffff;
   border: none;
   text-align: center;
   text-transform: uppercase;
   display: block;
   border-radius: 3px;
-margin-top:25px; margin-bottom: 26px;
-padding-top: 11px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  padding-top: 11px;
   padding-bottom: 9px;
-  background-color: #ee3643;}
+  background-color: #ee3643;
+}
 
 .modal-close {
   font: inherit;
@@ -1551,12 +1548,13 @@ padding-top: 11px;
 }
 
 .catalog-item {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
+  height: 317px;
 }
 
 .catalog-item:nth-child(3n) {
@@ -1645,11 +1643,52 @@ padding-top: 11px;
 }
 
 
-.popular-goods-wrapper .catalog-item {margin-right: 20px;}
-.popular-goods-wrapper .catalog-item:last-child {margin-right:0;}
+
+.popular-goods-wrapper .catalog-item {
+  margin-right: 20px;
+}
+
+.popular-goods-wrapper .catalog-item:last-child {
+  margin-right: 0;
+}
+
+.popular-goods-wrapper {
+  display: flex;
+}
+
+.popular-brand-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-brand {margin-bottom: 65px;    }
+
+.brand-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  width: 220px;
+  height: 145px;
+  border: 2px solid #ebebeb;
+}
+
+.brand {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.brand:nth-child(4n) {
+  margin-right: 0;
+}
 
 
- .popular-goods-wrapper {display: flex;}
+
+
+
+
+
 
 .catalog-item {
   position: relative;
@@ -1658,17 +1697,17 @@ padding-top: 11px;
   margin-right: 20px;
   margin-bottom: 20px;
 
- 
+
   vertical-align: top;
   text-align: center;
 
   border: 1px solid #cccccc;
   font-family: "PT Sans", "Arial", sans-serif;
-font-weight: 700;
-font-size: 17px;
+  font-weight: 700;
+  font-size: 17px;
 }
 
- 
+
 
 .new::before {
   content: "";
@@ -1694,7 +1733,7 @@ font-size: 17px;
 
 
   background-color: #ffffff;
-   
+
 }
 
 .actions .buy,
@@ -1705,7 +1744,7 @@ font-size: 17px;
   padding: 10px 0;
 
   font-size: 14px;
-  
+
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -1738,6 +1777,7 @@ font-size: 17px;
 }
 
 .catalog-item-image {
+
   width: 218px;
   height: 168px;
 }
@@ -1762,21 +1802,22 @@ font-size: 17px;
 .catalog-item .price {
   position: relative;
 
-  width: 80px;
-  margin: 0 auto 20px;
+  width: 73px;
+  margin: 0 auto 21px;
   padding: 10px 30px;
 
   color: #ffffff;
 
   background: #ee3643;
   border-radius: 3px;
-}
 
+}
+ 
 .catalog-item .price:after {
   content: "";
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -28px;
 
   width: 0;
   height: 0;
@@ -1785,3 +1826,30 @@ font-size: 17px;
   border-left-color: #ee3643;
 }
 
+.services {background-color: #f5f8fa;}
+
+.p-services {width:410px;   
+    font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;}
+
+.h2-services
+
+ 
+  {
+   
+  padding-top: 64px;
+  padding-bottom: 12px;
+
+}
+ 
+
+.service-button {border:none;
+    background-color:#32425c; 
+    width:240px; 
+    height: 61px; 
+    display:block; color:white;}
+
+.option-1:focus {
+    background-color: white; color: black;}
