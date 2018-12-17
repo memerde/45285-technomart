@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header index">
     <h1 class="visually-hidden">Техномарт — магазин строительных материалов</h1>
     <section class="top-menu">
       <div class="container">
@@ -18,7 +18,7 @@
           <li class="main-logo"><a href="#">Техномарт</a></li>
           <li class="top-menu-item search-item">
             <form class="search-form">
-              <label class="search visually-hidden" for="search">o
+              <label class="search visually-hidden" for="search">
                 Поиск по каталогу</label>
               <input type="search" id="search" class="search-field" placeholder="Поиск:">
             </form>
@@ -75,7 +75,7 @@
 <section class="popular-goods">
         <div class="title-wrapper">
           <h2 class="section-title">Популярные товары:</h2>
-          <a class="btn show-all-goods-btn" href="#">Все популярные товары</a>
+          <a class="btn-action show-all-goods-btn" href="#">Все популярные товары</a>
         </div>
         <div class="popular-goods-wrapper">
           <article class="catalog-item">
@@ -132,7 +132,7 @@
 <section class="popular-brand">
         <div class="title-wrapper">
           <h2 class="section-title">Популярные производители:</h2>
-          <a class="btn show-all-goods-btn" href="#">Все производители</a>
+          <a class="btn-action show-all-goods-btn" href="#">Все производители</a>
         </div>
         <div class="popular-brand-wrapper">
           <article class="brand">
@@ -184,29 +184,67 @@
 
 </div>
 
- <section class="services">
+<section class="services">
   <div class="container">
-<h2 class="section-title h2-services">Сервисы</h2>
-        <p class="p-services">
+
+
+
+  <h2 class="section-title h2-services">Сервисы</h2>
+  <p class="p-services">
               Хороший интернет-магазин отличается от плохого не только ценами!
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-            </p>
-<div class="service-wrapper">
-      <div class="service-list">
+  </p>
+
+  <div class="service-wrapper">
+
+  <div class="service-list">
+        <button class="service-button option-1 active">Доставка</button>
+        <button class="service-button option-2">Гарантия</button>
+        <button class="service-button option-3">Кредит</button>
+  </div>
+ 
+  <div class="options">
+
+   <div class="option-1-info">
+    <h3 class="option-info-header">
+   Доставка </h3>
+   <p class="p-services">
+   Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+  </div>
+
+  <div class="option-2-info">
+  <h3 class="option-info-header">
+  Гарантия </h3>
+  <p class="p-services">
+ Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием, вы всегда сможете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уже восстановите как-нибудь сами.</p>
+  </div>
+
+  <div class="option-3-info">
+  <h3 class="option-info-header">
+  Кредит </h3>
+  <p class="p-services">
+  Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+  <button class="btn-red">Отправить заявку</button>
+  </div>
+  </div>
+
+  <div class="service-img-container">
+  <div class="option-1-img">
+    <img src="img/car.png" alt="Автомобиль доставки" width="468" height="261">
+  </div>
+  <div class="option-2-img">
+    <img src="img/money.png" >
+  </div>
+  <div class="option-3-img">
+    <img src="img/guarantee.png" >
+  </div> 
+  </div>
+  </div>
 
 
-<button class="service-button option-1">Доставка</button>
-<button class="service-button option-2">Гарантия</button>
-<button class="service-button option-3">Кредит</button>
-
-           </div>
-</div>
-
-<div class="service-img-container">
-  <img src="img/car.png" >
 
   </div>
- </section>
+</section>
 
 
 <div class="container">
@@ -225,7 +263,7 @@
               <li class="delivery-item">Автотрейдинг</li>
               <li class="delivery-item">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="btn more-info-btn" href="company.html">Подробнее о компании</a>
+            <a class="btn-action more-info-btn" href="company.html">Подробнее о компании</a>
         </section>
 
         <section class="contacts">
@@ -235,7 +273,7 @@
               заехав в наш офис:
             </p>
             <a class="contacts-map"><img src="img/map-small.jpg" width="300" height="158" alt="Карта с адресом: Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8"></a>
-            <button class="btn write-us-btn" type="button">Заблудились? Напишите нам!</button>
+            <button class="btn-action write-us-btn" type="button">Заблудились? Напишите нам!</button>
         </section>
 
      </div>
@@ -313,30 +351,39 @@
       </div>
     </div>
   </footer>
-  <section class="modal map-big">
-    <img src="img/map-big.jpg">
-    <button class="btn" type="button">Закрыть</button>
+
+  <section class="modal modal-map-big">
+    <img src="img/map-big.jpg" width="940" height="446" alt="Карта">
+    <button class="btn modal-close-x" type="button">Закрыть</button>
   </section>
-  <section class="modal write-us">
+
+
+  <section class="modal modal-write-us">
     <h2 class="visually-hidden">
         Напишите нам!
       </h2>
+
+
     <form class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
-      <label class="name-form">Ваше имя:
+      <div class="form-column">
+      <label class="name-form"><p>Ваше имя:</p>
         <input type="text" name="name" placeholder="Имя Фамилия" class="name-area">
       </label>
-      <label class="email-form">Ваш e-mail:
+      <label class="email-form"><p>Ваш e-mail:</p>
         <input type="text" name="email" placeholder="email@example.com" class="email-area">
       </label>
-      <label class="message-form">Ваше сообщение:
-        <textarea name="message" placeholder="В свободной форме" class="message-area"></textarea>
+    </div>
+      <label class="message-form"><p>Текст письма:</p>
+        <textarea name="message"   placeholder="В свободной форме" class="message-area"></textarea>
       </label>
-      <button class="btn submit-form-btn" type="submit">
+      <button class="btn-red submit-form-btn" type="submit">
         Отправить
       </button>
     </form>
     <button class="btn modal-close-x" type="button">Закрыть</button>
   </section>
+
+
 </body>
 
 </html>
