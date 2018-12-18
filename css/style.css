@@ -255,7 +255,9 @@ img {
   padding-left: 44px;
 }
 
-.top-menu-cart a {padding-left: 48px;}
+.top-menu-cart a {
+  padding-left: 48px;
+}
 
 .top-menu-checkout a {
   font-size: 17px;
@@ -2187,5 +2189,3 @@ img {
   color: #32425c;
   background-color: #ffffff;
 }
-
-
