@@ -1000,6 +1000,8 @@ position: relative;
   padding: 0;
 }
 
+.section-p {width: 540px; }
+
 .company p,
 .contacts p {
   font-family: "PT Sans", "Arial", sans-serif;
