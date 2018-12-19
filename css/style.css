@@ -885,29 +885,27 @@ img {
 }
 
 .breadcrumbs-item li:first-child {
-  padding-right: 11px;
-
+  padding-right: 11px;  height:25px;
+position: relative;
 }
 
 .breadcrumbs-item li a {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
-  color: #000000;
+  color: #000000;width:40px; height:25px;
 }
 
-.home-crumb {
-  position: relative;
-}
+
 
 .home-crumb::before {
-  position: absolute;
+  position: absolute; 
   content: "";
   width: 20px;
   height: 20px;
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
-  top: 17px;
+  bottom: 2px;
   left: -2px;
 }
 
