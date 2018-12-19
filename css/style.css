@@ -855,11 +855,12 @@ img {
   text-transform: uppercase;
   width: 140px;
   color: #000000;
-  border: none;
+ 
   background-color: #ffffff;
   border-radius: 3px;
   padding-top: 9px;
   border: 1px solid #e5e5e5;
+  outline: none;
 }
 
 .filter-button:active {border: 1px solid #ee3643;}
