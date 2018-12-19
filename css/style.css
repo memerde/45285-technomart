@@ -856,11 +856,14 @@ img {
   width: 140px;
   color: #000000;
   border: none;
-  background-color: transparent;
+  background-color: #ffffff;
   border-radius: 3px;
   padding-top: 9px;
   border: 1px solid #e5e5e5;
 }
+
+.filter-button:active {border: 1px solid #ee3643;}
+.filter-button:hover {border: 1px solid #bdc6ca;}
 
 .breadcrumbs-item {
   display: flex;
