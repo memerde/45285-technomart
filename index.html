@@ -77,28 +77,40 @@
                 <span class="offer-button">На любой вкус</span>
               </a>
             </li>
+
             <li class="offer-item">
               <a href="#">
                 <span class="offer-descript">Инструмент</span>
                 <span class="offer-button">На все случаи</span>
               </a>
             </li>
+
             <li class="slider">
+<!-- <div class="radioslider"> -->
+
               <span class="offer-h">Дрели</span>
               <span class="offer-p">Соседям на радость!</span>
               <a class="btn-red slider-button" href="catalog.html">Открыть каталог</a>
-              <div class="radioslider">
-                <input type="radio" name="slider" value="slider" id="first-slider" class="slider-radio visually-hidden i1">
-                <label class="slider-label" for="first-slider"></label>
-                <input type="radio" name="slider" value="slider" checked id="second-slider" class="slider-radio visually-hidden i1">
-                <label class="slider-label" for="second-slider"></label>
-                <div class="slider-container-first c1">
-                  <img src="img/slide-1.jpg" alt="Слайд №1" width="620" height=260">
+
+              <input type="radio" name="slider" value="slider" id="first-slider" class="slider-radio visually-hidden i1">
+              
+              <div class="slider-container-next c2">
+              <img src="img/slide-2.jpg" alt="Слайд №1" width="620" height=260">
               </div>
-                  <div class="slider-container-next c2">
-                    <img src="img/slide-2.jpg" alt="Слайд №1" width="620" height=260">
+              
+              <label class="slider-label" for="first-slider"></label>
+
+
+              <input type="radio" name="slider" value="slider" checked id="second-slider" class="slider-radio visually-hidden i1">
+
+              <div class="slider-container-first c1">
+              <img src="img/slide-1.jpg" alt="Слайд №1" width="620" height=260">
               </div>
-                  </div>
+
+              <label class="slider-label" for="second-slider"></label>
+                
+                  
+              
             </li>
           </ul>
           <ul class="offer-column-rs">
@@ -249,7 +261,7 @@
               <h3 class="option-info-header">
                 Доставка </h3>
               <p class="p-services">
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+                Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             </div>
             <div class="option-2-info">
               <h3 class="option-info-header">
@@ -381,28 +393,34 @@
     <img src="img/map-big.jpg" width="940" height="446" alt="Карта">
     <button class="btn modal-close-x" type="button">Закрыть</button>
   </section>
+
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">
         Напишите нам!
       </h2>
     <form class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
-      <div class="form-column">
-        <label class="name-form">
-          <p>Ваше имя:</p>
-          <input type="text" name="name" placeholder="Имя Фамилия" class="name-area">
-        </label>
-        <label class="email-form">
-          <p>Ваш e-mail:</p>
-          <input type="text" name="email" placeholder="email@example.com" class="email-area">
-        </label>
+
+    <div class="form-column">
+      <div class="form-ls">
+        <label class="name-form" for="write-name">Ваше имя:</label>
+
+        <input class="name-area" type="text" name="name" placeholder="Имя Фамилия" id="write-name">
       </div>
-      <label class="message-form">
-        <p>Текст письма:</p>
-        <textarea name="message" placeholder="В свободной форме" class="message-area"></textarea>
-      </label>
+
+      <div class="form-rs">
+        <label class="email-form" for="write-email">Ваш e-mail:</label>
+        <input class="write-email" type="text" name="email" placeholder="email@example.com" class="email-area" class="write-email">
+      </div>
+
+      </div>
+
+      <label class="message-form" for="write-message">
+        Текст письма:</label>
+        <textarea name="message" id="write-message" placeholder="В свободной форме" class="message-area"></textarea>
       <button class="btn-red submit-form-btn" type="submit">
         Отправить
       </button>
+
     </form>
     <button class="btn modal-close-x" type="button">Закрыть</button>
   </section>
