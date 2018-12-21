@@ -434,7 +434,9 @@ img {
   padding-left: 45px;
 }
 
-.user-profile a {color: #000000;}
+.user-profile a {
+  color: #000000;
+}
 
 .my-profile {
   display: block;
@@ -457,12 +459,18 @@ img {
 
 .profile:hover+svg,
 .profile+svg:hover,
-.logout svg:hover{fill:#32425c;}
+.logout svg:hover {
+  fill: #32425c;
+}
 
 
 .profile:active+svg,
 .profile:active,
-.logout svg:active {fill:#c5c5c5; color:#c5c5c5;}
+.profile+svg:active,
+.logout svg:active {
+  fill: #c5c5c5;
+  color: #c5c5c5;
+}
 
 .logout svg {
   fill: #c5c5c5;
@@ -475,6 +483,7 @@ img {
   content: "";
 }
 
+/* ------------------ index ------------------ */
 .user-register {
   font-size: 21px;
 
@@ -552,9 +561,8 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-profile:active {
-  color: rgba(0, 0, 0, 0.3);
-}
+/* -----------------end-index-login----------------- */
+
 
 .my-orders,
 .my-account {
@@ -655,7 +663,9 @@ img {
 .shop-offer-columns,
 .offer-column-ls,
 .offer-column-rs,
-.offer-item {display:block;} 
+.offer-item {
+  display: block;
+}
 
 /* -------------------end-index-shop-offer--------------------- */
 
@@ -1044,12 +1054,12 @@ img {
 
 
 .offer-item {
-  display:block; 
-  height:123px; 
-  width:300px;}
+  display: block;
+  height: 123px;
+  width: 300px;
+}
 
-.offer-column-rs
-.offer-item:not(:last-child) {
+.offer-column-rs .offer-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -1285,6 +1295,8 @@ img {
   color: #000000;
 }
 
+
+
 .popular-brand .section-title,
 .popular-goods .section-title {
   padding-top: 30px;
@@ -1418,7 +1430,7 @@ img {
 /*--------------------------modal--------------------------*/
 .modal {
   position: fixed;
-z-index: 25;
+  z-index: 25;
   color: #000000;
   background-color: #ffffff;
 }
