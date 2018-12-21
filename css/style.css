@@ -420,51 +420,54 @@ text-align: center;
 
 .user-profile {
   position: relative;
-
+  min-width: 300px;
   box-sizing: border-box;
   margin-bottom: 6px;
   padding-top: 11px;
-  padding-right: 69px;
+  padding-right: 40px;
   padding-bottom: 11px;
   padding-left: 45px;
 }
 
+.user-profile a {color: #000000;}
+
 .my-profile {
   display: block;
-
   margin: 0;
   margin-left: 18px;
   padding: 0;
 }
 
-.user-profile::before {
+.profile+svg {
+  fill: #c5c5c5;
+
   position: absolute;
   top: 12px;
   left: 13px;
-
   width: 20px;
   height: 18px;
-
   content: "";
-
-  opacity: 0.3;
-  background-image: url("../img/icon-user.svg");
-  background-repeat: no-repeat;
+  opacity: 1;
 }
 
-.user-profile::after {
+.profile:hover+svg,
+.profile+svg:hover,
+.logout svg:hover{fill:#32425c;}
+
+
+.profile:active+svg,
+.profile:active,
+.logout svg:active {fill:#c5c5c5; color:#c5c5c5;}
+
+.logout svg {
+  fill: #c5c5c5;
   position: absolute;
   top: 14px;
   right: 11px;
-
   width: 20px;
   height: 17px;
-
+  opacity: 1;
   content: "";
-
-  opacity: 0.3;
-  background-image: url("../img/icon-logout.svg");
-  background-repeat: no-repeat;
 }
 
 .user-register {
@@ -640,6 +643,18 @@ text-align: center;
 .main-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
 }
+
+
+/* --------------------index-shop-offer------------------------ */
+
+.shop-offer-columns,
+.offer-column-ls,
+.offer-column-rs,
+.offer-item {display:block;} 
+
+/* -------------------end-index-shop-offer--------------------- */
+
+
 
 .filter-columns {
   display: flex;
@@ -980,12 +995,13 @@ text-align: center;
   position: relative;
 }
 
-.offer-item a {
+.offer-item {
   display:block; 
   height:123px; 
   width:300px;}
 
-.offer-column-rs .offer-item:not(:last-child) {margin-bottom: 20px;}
+.offer-column-rs 
+.offer-item:not(:last-child) {margin-bottom: 20px;}
 
 .offer-column-ls { flex-wrap: wrap;}
 .offer-column-rs { flex-direction: column;}
