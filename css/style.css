@@ -1459,7 +1459,7 @@ img {
 
 /*--------------------------modal--------------------------*/
 .modal {
-  
+
   position: fixed;
   z-index: 25;
   color: #000000;
@@ -1531,7 +1531,7 @@ img {
 
 /*--------------------------modal-index-------------------------*/
 .modal-write-us {
-    display: none;
+  display: none;
   top: 389px;
   left: 50%;
   width: 460px;
