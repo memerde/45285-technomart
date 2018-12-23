@@ -1539,6 +1539,18 @@ img {
   padding: 30px 80px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
+.modal-map-big {
+  top: 300px;
+  left: 50%;
+
+  display: none;
+
+  width: 940px;
+  height: 446px;
+  margin-left: -470px;
+
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
 
 .modal-show {
   display: block;
@@ -1645,18 +1657,7 @@ img {
   right: 13px;
 }
 
-.modal-map-big {
-  top: 300px;
-  left: 50%;
 
-  display: none;
-
-  width: 940px;
-  height: 446px;
-  margin-left: -470px;
-
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-}
 
 
 

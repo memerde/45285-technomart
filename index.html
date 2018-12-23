@@ -278,7 +278,7 @@
             </div>
           </form>
         </div>
-    </div>
+      </div>
     </section>
     <div class="container">
       <div class="section-wrapper">
@@ -406,26 +406,39 @@
     </form>
     <button class="btn modal-close-x" type="button">Закрыть</button>
   </section>
+  <script>
 
+  var map = document.querySelector(".contacts-map");
+  var mmb = document.querySelector(".modal-map-big");
 
-
-<script>
   var lost = document.querySelector(".write-us-btn");
   var popup = document.querySelector(".modal-write-us");
   var close = popup.querySelector(".modal-close-x");
+  var closemap = mmb.querySelector(".modal-close-x");
 
-  lost.addEventListener("click", function (evt) {
+  map.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    mmb.classList.add("modal-show");
+
+  });
+
+  closemap.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    mmb.classList.remove("modal-show");
+  });
+
+  lost.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
 
   });
 
-  close.addEventListener("click", function (evt) {
+  close.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
   });
 
-  window.addEventListener("keydown", function (evt) {
+  window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
@@ -433,8 +446,8 @@
       }
     }
   });
-</script>
 
+  </script>
 </body>
 
 </html>
