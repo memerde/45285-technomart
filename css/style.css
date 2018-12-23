@@ -1480,19 +1480,7 @@ img {
   background-color: #ba2732;
 }
 
-.modal-add-to-cart {
-  width: 620px;
-  height: 282px;
-  top: 411px;
-  left: 50%;
 
-  z-index: 15;
-  display: none;
-  margin-left: -310px;
-
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-  background-color: #ffffff;
-}
 
 .modal-add-to-cart::before {
   position: absolute;
@@ -1527,6 +1515,20 @@ img {
   height: 66px;
   background-image: url("../img/added.svg");
   background-repeat: no-repeat;
+}
+
+.modal-add-to-cart {
+  width: 620px;
+  height: 282px;
+  top: 411px;
+  left: 50%;
+
+  z-index: 15;
+  display: none;
+  margin-left: -310px;
+
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  background-color: #ffffff;
 }
 
 /*--------------------------modal-index-------------------------*/
