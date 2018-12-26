@@ -97,14 +97,6 @@ img {
   background-color: #f1f5f7;
 }
 
-.index {
-  margin-bottom: 60px;
-}
-
-
-
-
-
 .main-logo a {
   font-size: 24px;
   line-height: 24px;
@@ -310,6 +302,11 @@ img {
 
 /*-------------------------------------------------------------- end*/
 
+
+/* отступ в индексе от хедера до секции со слайдером*/
+.index {
+  margin-bottom: 59px; 
+}
 
 
 
@@ -548,7 +545,7 @@ margin-bottom: 2px;
 
   content: "";
 
-  opacity: 0.3;
+  opacity: 0.2;
   background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
 }
@@ -562,8 +559,8 @@ margin-bottom: 2px;
   height: 17px;
 
   content: "";
-
-  background-image: url("../img/icon-login-blue.svg");
+  opacity: 1;
+  background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
 }
 
@@ -576,7 +573,7 @@ margin-bottom: 2px;
   height: 17px;
 
   content: "";
-
+  opacity: 0.2;
   background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
 }
@@ -978,7 +975,8 @@ margin-bottom: 2px;
   border: 1px solid #bdc6ca;
 }
 
-/* -------------------------------------------- крокши */
+/* --------------------------------------------------- крокши */
+
 .breadcrumbs-item {
   position: relative;
 
@@ -988,35 +986,39 @@ margin-bottom: 2px;
   margin: 0;
   padding: 0;
   padding-top: 19px;
-  padding-bottom: 18px;                /* -------------- отступы до перфораторов */
+  padding-bottom: 16px; /* ------------ отступы до перфораторов */
 }
 
 .breadcrumbs-item li {
-  
+  display:block;
+  position: relative;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
+  padding-right:40px;
 
 }
 
-
-.breadcrumbs-item li a {
+.breadcrumbs-item li a, .breadcrumbs-current {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: 400;
     position: relative;
-    display: inline-block;
-    vertical-align: top;
+    /*display: inline-block;
+    vertical-align: bottom;*/
+    display:block;
     margin: 0;
     padding: 0;
     margin-bottom: 3px;
     color: #000000;
-    padding-right:40px;  
-    padding-bottom: 2px;                   /* ----------- отступы в крошках */
+      
+     padding-top: 2px;
+        padding-bottom: 2px;              /*  ----------- отступы в крошках */
     text-transform: uppercase;
 }
 
+.breadcrumbs-current {cursor: default;}
 /* .breadcrumbs-item li:first-child {
   position: relative;
   height: 25px;
@@ -1033,9 +1035,9 @@ margin-bottom: 2px;
 }
 
 
-.breadcrumbs-item li a::after {
+.breadcrumbs-item li:not(:last-child)::after {
   position: absolute;
-  top: 2px;
+  top: 4px;
   right: 10px;
 
   width: 15px;
@@ -1056,8 +1058,8 @@ margin-bottom: 2px;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-  padding-top: 30px;  /* -------------- отступы до перфораторов */
-  padding-bottom: 29px;
+  padding-top: 28px;  /* -------------- отступы до перфораторов */
+  padding-bottom: 31px;
   padding-left: 28px;
 
   text-transform: uppercase;
@@ -1237,6 +1239,20 @@ margin-bottom: 2px;
 }
 
 
+
+
+/* тут индекс слайдер*/
+
+
+
+
+
+
+
+
+
+
+
 .slider-img-1,
 .slider-img-2,
 .descript-1,
@@ -1284,7 +1300,7 @@ margin-bottom: 2px;
 .descript-1,
 .descript-2 {
   position: absolute;
-  top: 18px;
+  top: 15px;
   left: 3px;
 
   width: 100px;
@@ -1346,7 +1362,7 @@ margin-bottom: 2px;
   line-height: 24px;
 
   position: absolute;
-  top: 24px;
+  top: 23px;
   left: 22px;
 
   content: "";
@@ -1358,11 +1374,11 @@ margin-bottom: 2px;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
-
+ 
   position: absolute;
   top: 24px;
   left: 21px;
-
+ 
   content: "";
   text-transform: uppercase;
 
@@ -1375,7 +1391,7 @@ margin-bottom: 2px;
   line-height: 18px;
 
   position: absolute;
-  top: 63px;
+  top: 66px;
   left: 22px;
 
   min-width: 240px;
@@ -1391,15 +1407,15 @@ margin-bottom: 2px;
   line-height: 14px;
 
   position: absolute;
-  top: 64px;
+  top: 63px;
   left: 25px;
 
   display: block;
 
   box-sizing: border-box;
-  min-width: 135px;
+  width: 135px;
   margin: 0;
-  padding: 12px 25px;
+  padding: 13px 0 11px;
 
   content: "";
   text-align: center;
@@ -1408,6 +1424,11 @@ margin-bottom: 2px;
   color: #ffffff;
   border-radius: 2px;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.offer-column-rs .offer-button {
+   
+  left: 23px;
 }
 
 .offer-button:hover {
@@ -1464,18 +1485,20 @@ margin-bottom: 2px;
 
 .popular-brand .section-title,
 .popular-goods .section-title {
-  padding-top: 30px;
+  padding-top: 29px;
+  color: #32425c;
 }
 
-.popular-brand .section-title .company {
-  width: 540px;
+.company p{
+  width: 400px;
   margin: 0;
   padding: 0;
 }
 
-.section-p {
+.company .section-p {
   width: 540px;
 }
+
 
 .company p,
 .contacts p {
@@ -1498,7 +1521,7 @@ margin-bottom: 2px;
 }
 
 .contacts p {
-  padding-bottom: 34px;
+  padding-bottom: 32px;
   width: 180px;
 }
 
@@ -1565,7 +1588,7 @@ margin-bottom: 2px;
   margin-bottom: 30px;
   padding-top: 11px;
   padding-bottom: 9px;
-
+  text-align: center;
   border-radius: 3px;
 }
 
@@ -1579,8 +1602,8 @@ margin-bottom: 2px;
   width: 253px;
   margin-top: 25px;
   margin-bottom: 26px;
-  padding-top: 11px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   text-align: center;
   text-transform: uppercase;
@@ -1699,6 +1722,23 @@ margin-bottom: 2px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
+.modal-map-big p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+
+.modal-map-big iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
 .modal-show {
   display: block;
 
@@ -1774,12 +1814,7 @@ margin-bottom: 2px;
   justify-content: space-between;
 }
 
-.name-area::placeholder,
-.email-area::placeholder,
-.message-area::placeholder {
-  opacity: 1;
-  color: #a9a9a9;
-}
+
 
 .modal-close-x {
   font-size: 0;
@@ -1800,6 +1835,7 @@ margin-bottom: 2px;
 .modal-map-big .modal-close-x {
   top: 11px;
   right: 10px;
+  z-index: 3;
 }
 
 .modal-write-us .modal-close-x {
@@ -1807,8 +1843,32 @@ margin-bottom: 2px;
   right: 13px;
 }
 
+ 
+.modal-error {
+  animation: shake 0.6s;
+}
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
 
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 
 .modal-close-x::before,
@@ -1844,6 +1904,9 @@ margin-bottom: 2px;
   width: 300px;
 }
 
+
+
+
 .modal-close {
   font: inherit;
   font-size: 14px;
@@ -1864,18 +1927,7 @@ margin-bottom: 2px;
   background-color: #e5e5e5;
 }
 
-.message-area {
-  box-sizing: border-box;
-  width: 460px;
-  min-height: 115px;
-  margin: 0 auto;
-  margin-bottom: 73px;
-  padding: 7px 14px;
 
-  resize: none;
-
-  border-radius: 3px;
-}
 
 .name-form,
 .email-form,
@@ -1915,7 +1967,7 @@ margin-bottom: 2px;
   padding-bottom: 9px;
 }
 
-.name-area,
+/*.name-area,
 .message-area,
 .email-area {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1925,7 +1977,7 @@ margin-bottom: 2px;
   color: #a9a9a9;
   border: 2px solid #dee3e4;
 }
-
+*/
 .write-us-form {
   padding-top: 23px;
 }
@@ -1943,6 +1995,26 @@ margin-bottom: 2px;
   padding-left: 12px;
 
   border: 2px solid #dee3e4;
+  border-radius: 3px;
+}
+
+.name-area::placeholder,
+.email-area::placeholder,
+.message-area::placeholder {
+  opacity: 1;
+  color: #a9a9a9;
+}
+
+.message-area {
+  box-sizing: border-box;
+  width: 460px;
+  min-height: 115px;
+  margin: 0 auto;
+  margin-bottom: 73px;
+  padding: 7px 14px;
+
+  resize: none;
+
   border-radius: 3px;
 }
 
@@ -2452,6 +2524,8 @@ cursor: pointer;
   align-items: center;
 }
 
+
+
 .catalog-item:hover,
 .brand:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
@@ -2587,10 +2661,11 @@ cursor: default;
   width: 220px;
   height: 145px;
 
-  border: 2px solid #ebebeb;
+  border: 1px solid #eaeaea;
 
   align-items: center;
   justify-content: center;
+  padding-bottom:7px;
 }
 
 .brand {
@@ -2616,7 +2691,7 @@ cursor: default;
   text-align: center;
   vertical-align: top;
 
-  border: 1px solid #cccccc;
+  border: 1px solid #eaeaea;
 }
 
 .new::before {
@@ -2727,9 +2802,9 @@ cursor: default;
 .catalog-item-image {
   display: flex;
 
-  width: 218px;
+ margin-top:5px;
   height: 160px;
-  margin-bottom: 2px;
+
 
   justify-content: center;
   align-items: center;
@@ -2740,8 +2815,8 @@ cursor: default;
   line-height: 20px;
 
   width: 170px;
-  margin-top: 10px;
-  margin-bottom: 13px;
+  margin-top: 7px;
+  margin-bottom: 12px;
   padding: 0 25px;
 }
 
@@ -2751,15 +2826,15 @@ cursor: default;
 
   text-decoration: line-through;
 
-  color: #999999;
+  color: #a9a9a9;
 }
 
 .catalog-item .price {
   position: relative;
 
-  width: 73px;
+  width: 134px;
   margin: 0 auto;
-  padding: 10px 30px;
+  padding: 10px 0 11px;
 
   color: #ffffff;
   border-radius: 3px;
@@ -2788,14 +2863,6 @@ cursor: default;
 
 /* ------------------------services------------------------ */
 
-
-
-
-
-
-
-
-
 .option-label {
   display: block;
   box-sizing: border-box;
@@ -2803,13 +2870,12 @@ cursor: default;
   font-weight: 700;
   line-height: 21px;
   width: 240px;
-  padding: 18px 22px 21px;
+  padding: 17px 22px 21px;
   color: #ffffff;
   background-color: #32425c;
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
 }
-
 
 .option-input:hover+.option-label {
   background-color: #293449;
@@ -2847,6 +2913,7 @@ cursor: default;
 
 .service-form {
   position: relative;
+    margin-bottom: 100px;
 }
 
 .service-form::after {
@@ -2867,6 +2934,7 @@ cursor: default;
   position: absolute;
   top: 0;
   left: 300px;
+
 }
 
 .option-1-info::after {
@@ -2957,14 +3025,20 @@ cursor: default;
   display: block;
 }
 
-
 .option-btn {
   width: 195px;
   margin-top: 26px;
-  padding: 0 30px;
+  
+  text-align: center
 }
 
+.option-btn:hover {
+  background-color: #ca2c37;
+}
 
+.option-btn:active {
+  background-color: #ba2732;
+}
 
 
 .services {
@@ -2992,3 +3066,29 @@ cursor: default;
 }
 
 
+/* ----------------------------------- слайдер с перфораторами*/
+.slider-label{position: relative;}
+
+.radio-slider+.slider-label::before {
+  position: absolute;
+  content: "";
+  top:238px;
+  left:295px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;  
+}
+
+.radio-slider:checked+.slider-label::after{
+  content: "";
+  top:240px;
+  left:297px;
+  width: 6px;
+  height: 6px;
+  background-color: #ee3643;
+  border-radius: 10px;
+  position: absolute;
+}
+
+/* --------------------------------------------------------- */
