@@ -316,17 +316,22 @@ img {
                             /*      отступы в хедере           */
 .top-menu {
   margin: 0;
-  margin-bottom: 49px;       /*   отступ до конца хедера */
+  margin-bottom: 46px; /*отступ до второй части хедера */
   padding: 0;
-  
   background-color: #293449;
 }
-
+.header-about {
+  width: 200px;
+  margin: 0;
+  margin-right: 68px;
+  padding-left: 52px;
+  padding-top:2px;           /* внутренний отступ сверху до описания магазина*/
+}
 .header-section {
   display: flex;
 
   margin: 0;
-  margin-bottom: 40px;        /*    отступ до меню магазина */
+  margin-bottom: 41px;        /*    отступ до меню магазина */
   
   padding: 0;
 
@@ -334,12 +339,13 @@ img {
 }
 
 
-.header-about {
-  width: 200px;
-  margin: 0;
-  margin-right: 68px;
-  padding-left: 52px;
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+margin-bottom: 2px;
+  background-color: #32425c;
 }
+
 
 
 /*-----------------------------------------------------------------------*/
@@ -506,12 +512,6 @@ img {
   fill: #c5c5c5;
 }
 
-.main-navigation {
-  font-size: 17px;
-  line-height: 17px;
-
-  background-color: #32425c;
-}
 
 /* ------------------ index ------------------ */
 .user-register {
@@ -987,7 +987,7 @@ img {
   width: 350px;
   margin: 0;
   padding: 0;
-  padding-top: 21px;
+  padding-top: 19px;
   padding-bottom: 18px;                /* -------------- отступы до перфораторов */
 }
 
@@ -2540,7 +2540,7 @@ cursor: default;
 
   margin: 0;
   padding: 0;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
 }
 
 .about-item-h3 {
