@@ -12,9 +12,7 @@
 <body>
   <header class="main-header">
     <h1 class="visually-hidden">Техномарт — магазин строительных материалов</h1>
-
     <section class="top-menu">
-
       <div class="container">
         <ul class="top-menu-list">
           <li class="main-logo"><a href="index.html">Техномарт</a></li>
@@ -37,14 +35,11 @@
           <li class="top-menu-checkout"><a href="#">Оформить заказ</a></li>
         </ul>
       </div>
-
     </section>
-
     <div class="container">
-
       <div class="header-section">
         <div class="header-about">
-          <p>Интернет-магазин строительных материалов и&nbspинструментов для ремонта</p>
+          <p>Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
         </div>
         <div class="main-phone">
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -93,8 +88,6 @@ v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.32
   </header>
   <main class="main-container">
     <div class="container">
-
-
       <ul class="breadcrumbs-item">
         <li><a class="home-crumb" href="index.html" title="Домой">
         	<img src="img/icon-home.svg" alt="Домой" width="15" height="15"></a></li>
@@ -102,8 +95,6 @@ v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.32
         <li><a href="#">Инструмент</a></li>
         <li> <a class="breadcrumbs-current">Перфораторы</a></li>
       </ul>
-
-
       <h2 class="catalog-title">Перфораторы</h2>
       <div class="catalog-columns">
         <section class="filters">
@@ -191,7 +182,6 @@ v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.32
           </div>
           <h2 class="visually-hidden">Список товаров</h2>
           <div class="catalog-goods-wrapper">
-
             <article class="catalog-item">
               <div class="actions">
                 <a class="buy" href="#">Купить</a>
@@ -353,7 +343,7 @@ v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.32
         <div class="footer-bottom-wrapper">
           <div class="footer-rights">
             <p>© 2010–2017 Компания «Техномарт»
-            Все права защищены</p>
+              Все права защищены</p>
           </div>
           <p class="visually-hidden">Мы в социальных сетях:</p>
           <ul class="social-btn-list">
@@ -397,39 +387,7 @@ v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.32
       <button class="btn modal-close-x" type="button">Закрыть</button>
     </div>
   </section>
-  <script>
-  var buybtn = document.querySelectorAll(".buy");
-  var popup = document.querySelector(".modal-add-to-cart");
-  var close = popup.querySelector(".modal-close-x");
-  var retrn = popup.querySelector(".modal-close");
-
-  buybtn.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-
-  });
-
-  retrn.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-
-  close.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-
-  window.addEventListener("keydown", function(evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-      }
-    }
-  });
-
- </script>
-
+<script src="js/catalog.js"></script>
 </body>
 
 </html>

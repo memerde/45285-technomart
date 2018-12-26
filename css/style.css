@@ -1967,6 +1967,8 @@ margin-bottom: 2px;
   padding-bottom: 9px;
 }
 
+.name-area:active {border: 1px solid red;}
+
 /*.name-area,
 .message-area,
 .email-area {
