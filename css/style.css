@@ -365,7 +365,6 @@ img
 {
     margin: 0;
     margin-bottom: 46px;
-    /*отступ до второй части хедера */
     padding: 0;
 
     background-color: #293449;
@@ -378,7 +377,6 @@ img
     margin-right: 68px;
     padding-top: 2px;
     padding-left: 52px;
-    /* внутренний отступ сверху до описания магазина*/
 }
 
 .header-section
@@ -389,7 +387,6 @@ img
 
     margin: 0;
     margin-bottom: 41px;
-    /*    отступ до меню магазина */
     padding: 0;
 
     -webkit-box-pack: start;
@@ -1114,8 +1111,6 @@ img
     font-weight: 400;
 
     position: relative;
-    /*display: inline-block;
-    vertical-align: bottom;*/
 
     display: block;
 
@@ -1172,7 +1167,6 @@ img
     margin-bottom: 20px;
     padding: 0;
     padding-top: 28px;
-    /* -------------- отступы до перфораторов */
     padding-bottom: 31px;
     padding-left: 28px;
 
@@ -1267,7 +1261,6 @@ img
 .offer-column-ls .offer-item:first-child::after
 {
     position: absolute;
-    /* top: 32px; */
     right: 43px;
     bottom: 25px;
 
@@ -1310,7 +1303,6 @@ img
 .offer-column-rs .offer-item:first-child::after
 {
     position: absolute;
-    /* top:30px; */
     right: 33px;
     bottom: 25px;
 
@@ -3049,7 +3041,6 @@ img
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 218px;
-    /*height: 88px;*/
     padding: 40px 0;
 
     background-color: #ffffff;
